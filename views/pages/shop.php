@@ -1,0 +1,1 @@
+<?php include('views/partials/_search.php') ?>

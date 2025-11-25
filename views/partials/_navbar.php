@@ -4,7 +4,7 @@
 			<ul>
 				<li>
 					<strong>
-						<a href="index.php?page=home">Acceuil</strong>
+						<a href="index.php?page=home">Accueil</strong>
 				</li>
 			</ul>
 			<ul>

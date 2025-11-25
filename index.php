@@ -7,7 +7,7 @@
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assests/css/style.css">
 </head>
 <body>
     <?php include('views/partials/_navbar.php') ?>

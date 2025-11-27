@@ -9,7 +9,16 @@
 <body>
     <?php include('views/partials/_navbar.php') ?>
     <main class="container">
-         <?php include ('views/pages/'. $_GET['page'] .'.php') ?>
+    <?php
+        $page = $_GET['page'] ?? 'home';
+        $file = "views/pages/$page.php";
+
+        if (file_exists($file)) {
+            include($file);
+        } else {
+            echo "<p>Page introuvable : <strong>$page</strong></p>";
+        }
+    ?>
     </main>
     <?php include('views/partials/_footer.php') ?>
 </body>

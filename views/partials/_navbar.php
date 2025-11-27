@@ -3,8 +3,7 @@
 		<nav>
 			<ul>
 				<li>
-					<strong>
-						<a href="index.php?page=home">Accueil</strong>
+					<a href="index.php?page=home"><strong>Accueil</strong></a>
 				</li>
 			</ul>
 			<ul>

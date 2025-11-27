@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.Nom_boutique{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.Lien{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #f1c40f;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Placement{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}

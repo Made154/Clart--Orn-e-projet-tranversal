@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarté Ornée</title>
-    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/app.css">
 </head>
 <body>
     <?php include('views/partials/_navbar.php') ?>

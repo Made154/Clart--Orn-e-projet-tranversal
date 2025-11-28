@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="assests/css/app.css">
 </head>
 <body>
+    <div class="bloc">
+         <div class="triangle"></div>
+    </div>
+
     <?php include('views/partials/_navbar.php') ?>
     <main class="container">
     <?php

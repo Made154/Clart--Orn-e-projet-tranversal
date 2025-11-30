@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarté Ornée</title>
     <link rel="stylesheet" href="assests/css/app.css">
+
 </head>
 <body>
     <div class="bloc">
@@ -12,6 +13,7 @@
     </div>
 
     <?php include('views/partials/_navbar.php') ?>
+    <?php include ("models/bdd.php"); ?>
     <main class="container">
     <?php
         $page = $_GET['page'] ?? 'home';

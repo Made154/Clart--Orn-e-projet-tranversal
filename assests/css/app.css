@@ -111,3 +111,34 @@ form input[type="submit"]:hover {
     color: white;
     font-family: "Copperplate", "Copperplate Gothic", serif;
 }
+
+.name_category h2 {
+    color: #A67956;;
+}
+
+.article_item {
+    display: grid;
+    display: inline-block;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.article_item h3 {
+    color:#A67956;
+}
+
+.article_item img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.article_item p {
+    color: black;
+}
+
+.product_description img {
+    width: 100px;
+    height: auto;
+}

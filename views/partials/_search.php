@@ -25,7 +25,6 @@
                 FROM article a
                 JOIN category c ON a.id_category = c.id
                 WHERE " . implode(" OR ", $conditions);
-        include("models/bdd.php");
         $res=$pdo->prepare($sql);
         $res->setFetchMode(PDO::FETCH_ASSOC);
         $res->execute($params);

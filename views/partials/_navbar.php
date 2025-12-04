@@ -7,8 +7,7 @@
                 <li><a href="index.php?page=home" class="Lien">Acceuil</a></li>
                 <li><a href="index.php?page=services"class="Lien">Services</a></li>
                 <li><a href="index.php?page=shop" class="Lien">Boutique</a></li>
-                <li><a href="index.php?page=my-account" class="Lien">Mon conpte</a></li>
-                <li><a href="index.php?page=product_details" class="Lien">Produit</a></li>
+                <li><a href="index.php?page=my-account" class="Lien">Mon compte</a></li>
             </ul>
         </nav>
 </header>

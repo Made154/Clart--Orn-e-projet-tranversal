@@ -8,9 +8,6 @@
 
 </head>
 <body>
-    <div class="bloc">
-         <div class="triangle"></div>
-    </div>
 
     <?php include('views/partials/_navbar.php') ?>
     <?php include ("models/bdd.php"); ?>

@@ -1,13 +1,6 @@
 body {
   height: 100vh;
-
-  background: 
-    linear-gradient(to bottom right,          
-      #A67956 0%,                             
-      #A67956 50%,                            
-      white 50%,                              
-      white 100%
-    );
+  background-color: #ffffff;
 }
 
 
@@ -18,11 +11,11 @@ body {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
-    color: #ffffff;
-    border: 2px solid #A67956;
+    color: #A67956;
+    border: 2px solid #000000;
     border-radius: 50px;
     padding: 10px;
-    background-color: #A67956;
+    background-color: #ffffff;
     transition: 0.3s;
     font-size: 55px;
     margin-left: 5px;
@@ -32,7 +25,7 @@ body {
     text-decoration: none;
     display: inline-block;
     color: #A67956;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
     padding: 10px;
     background-color: rgb(255, 255, 255);

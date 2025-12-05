@@ -8,7 +8,7 @@
 
 </head>
 
-<?php include('../../models/product.php'); ?>
+<?php require('../../models/product.php'); ?>
 
 <h1><?php echo $article['name']; ?></h1>
 

@@ -1,1 +1,1 @@
-<?php include('views/partials/_search.php') ?>
+<?php require('views/partials/_search.php') ?>

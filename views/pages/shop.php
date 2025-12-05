@@ -1,6 +1,6 @@
-<?php include('views/partials/_search.php') ?>
+<?php require('views/partials/_search.php') ?>
 
-    <h2 class=name_category>Table</h2>
+    <h2 class=name_category>Bureau</h2>
         <div class=article>
             <?php 
                 $id_category = 1;
@@ -28,7 +28,7 @@
                 include('models/item_display.php') 
             ?>
         </div>
-    <h2 class=name_category>Bureau</h2>
+    <h2 class=name_category>Table</h2>
         <div class=article>
             <?php 
                 $id_category = 5;

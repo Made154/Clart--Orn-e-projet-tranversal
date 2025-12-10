@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #552a00;
 }
 
 
@@ -134,4 +134,19 @@ form input[type="submit"]:hover {
 .article img {
     width: 100px;
     height: 100px;
+}
+
+.résultat {
+    display: inline-block;
+    border: 2px solid #a15711;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+    color: #a15711;
+}
+
+.search_shop li{
+    margin-bottom: 20px;
+    color: #a15711;
 }

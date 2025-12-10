@@ -1,15 +1,12 @@
-<header>
-    <nav class="Placement">
-	    <a href="index.php?page=home" class="Nom_boutique">Clarté Ornée</a>
-    </nav>
-	    <nav>
-            <ul>
-                <li><a href="index.php?page=home" class="Lien">Acceuil</a></li>
-                <li><a href="index.php?page=services"class="Lien">Services</a></li>
-                <li><a href="index.php?page=shop" class="Lien">Boutique</a></li>
-                <li><a href="index.php?page=my-account" class="Lien">Mon compte</a></li>
-            </ul>
-        </nav>
-</header>
+<div class="navabar">
+    <button onclick="menu.hidden ^= 1">≡</button>
+
+    <ul id="menu" hidden>
+        <li><a href="index.php?page=home" class="Lien">Accueil</a></li>
+        <li><a href="index.php?page=shop" class="Lien">Boutique</a></li>
+        <li><a href="index.php?page=my-account" class="Lien">Mon compte</a></li>
+    </ul>
+</div>
+
 
 

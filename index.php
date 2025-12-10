@@ -15,7 +15,6 @@
 ">
 
     <?php include('views/partials/_navbar.php') ?>
-    <?php include('views/partials/_section.php') ?>
 
    
     <main class="container">

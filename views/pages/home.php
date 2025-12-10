@@ -1,1 +1,1 @@
-<?php include('views/partials/_search.php') ?>
+<?php include('views/partials/_section.php') ?>

@@ -1,4 +1,4 @@
-<?php
+<?php 
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
@@ -21,12 +21,11 @@
         }
 
         if (!empty($conditions)) {
-        $sql = "SELECT a.name AS name_article, c.name AS category, a.description
+        $sql = "SELECT a.name AS name_article, c.name AS category, a.illustration AS illustration, a.description
                 FROM article a
                 JOIN category c ON a.id_category = c.id
                 WHERE " . implode(" OR ", $conditions);
-        include("models/bdd.php");
-        $res=$pdo->prepare($sql);
+        $res=$db->prepare($sql);
         $res->setFetchMode(PDO::FETCH_ASSOC);
         $res->execute($params);
         $tab=$res->fetchAll();
@@ -42,21 +41,22 @@
 </form>
 
 <?php if (@$afficher=="oui") { ?>
-<div id="resultats">
-    <div id="nbr">
+<div id="resultats" class=search_shop>
+    <div id="nbr" class=résultat>
         <?php  
             if ((count($tab))>1) {
-                echo count($tab) . "résultats trouvés";
-            }else { echo count($tab) . "résultat trouvé"; 
+                echo count($tab) . " résultats trouvés";
+            }else { echo count($tab) . " résultat trouvé"; 
             }
         ?>
-        </div>
+    </div>
         <?php for($i=0;$i<count($tab);$i++):  ?>
             <li>
                 <strong><?php echo htmlspecialchars($tab[$i]['name_article']); ?></strong>
                 (<?php echo htmlspecialchars($tab[$i]['category']); ?>)<br>
+                <?php //echo htmlspecialchars($tab[$i]['illustration']); ?><br>
                 <?php echo htmlspecialchars($tab[$i]['description']); ?>
             </li>
         <?php endfor; ?>
-<?php } ?>
+    <?php } ?>
 </div>

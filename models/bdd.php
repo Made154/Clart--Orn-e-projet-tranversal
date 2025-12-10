@@ -6,5 +6,4 @@ $sql = "SELECT * FROM article";
 $query = $db->query($sql);
 $article = $query->fetchAll();
 
-var_dump($article);
 ?>

@@ -25,7 +25,7 @@ CREATE TABLE category (
 );
 
 CREATE TABLE article (
-    id INT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     id_category INT NOT NULL,
     name VARCHAR(100),
     description TEXT,
@@ -100,16 +100,16 @@ INSERT INTO category VALUES
 
 -- Catégorie 1: Table (1–10)
 INSERT INTO article VALUES
-(1,1,'Aurora','Éclairage moderne doux.',49.90,'aurora.jpg',1,0),
-(2,1,'Nordik','Style bois scandinave.',59.90,'nordik.jpg',0,0),
-(3,1,'ZenLight','Ambiance zen.',39.90,'zenlight.jpg',1,1),
-(4,1,'CrystalDome','Dôme en verre.',89.90,'crystal.jpg',0,0),
-(5,1,'VintageGlow','Style rétro.',55.90,'vintage.jpg',0,1),
-(6,1,'IronShade','Métal brut.',69.00,'ironshade.jpg',0,0),
-(7,1,'ScandiPure','Minimalisme pur.',52.00,'scandi.jpg',1,0),
-(8,1,'SoftSphere','Sphère lumineuse.',44.00,'sphere.jpg',0,0),
-(9,1,'RoyalGlass','Verre premium.',95.00,'royal.jpg',0,1),
-(10,1,'StarLite','Effet étoilé.',39.00,'starlite.jpg',0,0);
+(1,1,'Aurora','Éclairage moderne doux.',49.90,'https://xlumina.de/cdn/shop/files/auroraglow-nordlicht-lampe-tischlampe-825_1024x1024.webp?v=1730111934',1,0),
+(2,1,'Nordik','Style bois scandinave.',59.90,'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQhE6vnD459CljJM_XFe0uC__CjLEnntvV_Lg6dq5CpcloImNMaB07cVnkqW4BiYHGD4OBmE3TSHtN_98wR5uOIAuE9XMaaTZRHGLxt6M-hpt9-G4xNC2G4vw&usqp=CAc',0,0),
+(3,1,'ZenLight','Ambiance zen.',39.90,'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT3DDVd3C035U-3mXp1QpZz9DcwsZsZhOfOCDh-6jCnKYgRkxx7vhQb3xw26gkQE2Sa8vZzXztOz4w8BXFEWMa8xAm7XwAq8YUUFCxiNrbglld_6GigPorjZg&usqp=CAc',1,1),
+(4,1,'CrystalDome','Dôme en verre.',89.90,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXmnjb-GbhyRbZCsN1-W1WXA5Mt1_kmfIAw&s',0,0),
+(5,1,'VintageGlow','Style rétro.',55.90,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezMhR5vrTaXATZ5tB_NnXhXXfDyn-wIO2vg&s',0,1),
+(6,1,'IronShade','Métal brut.',69.00,'https://images.unsplash.com/photo-1758945630698-50766145f7c9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxsYW1wZXMlMjBidXJlYXV8ZW58MHx8MHx8fDA%3D',0,0),
+(7,1,'ScandiPure','Minimalisme pur.',52.00,'https://lw-cdn.com/images/DD98CE342064/k_1a61589a1c31f79a793cde60d6bae171;w_1600;h_1600;q_100/9643035.jpg',1,0),
+(8,1,'SoftSphere','Sphère lumineuse.',44.00,'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9VsJ5rSVFEzFBQ0GZkHrmjcXYD-bBHoI0TT_WV25DqFk4iSzMixI8KHsV7O7W2Xgp6AKpfoBUzLiXiZKmjdhW8js0-oPIujCTKjF4foeYztCtXLhNY28Hn4U&usqp=CAc',0,0),
+(9,1,'RoyalGlass','Verre premium.',95.00,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnjcPy0_AuTROz56Azq1vxXyDkAyKudI7jQ&s',0,1),
+(10,1,'StarLite','Effet étoilé.',39.00,'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4eEvT9TMzDUlDl4ucmvRKnWSsK5i8v1CjT6Ma2kBWqghU5SwAweUDqO1oZQdlm92_OQJD6B0Jr5GGDGtwJm3C49aO26X7MKKXXhlgSqGF&usqp=CAc',0,0);
 
 -- Catégorie 2: Lampadaire (11–20)
 INSERT INTO article VALUES

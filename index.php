@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="assests/css/app.css">
 
 </head>
-<body>
+<body style="
+    background-image: url(https://ecoquartiervauban.fr/wp-content/uploads/2024/12/temp-imagejpg-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+">
 
     <?php include('views/partials/_navbar.php') ?>
     <?php include ("models/bdd.php"); ?>

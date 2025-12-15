@@ -12,6 +12,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    background-attachment: fixed;
 ">
 
     <?php include('views/partials/_navbar.php') ?>

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 body {
     height: 100vh;
@@ -9,12 +10,20 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+=======
+>>>>>>> Stashed changes
 
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.square {
+    margin-bottom: 50px;
     width: 40%;
     border: 2px solid white;
     border-radius: 20px;
-    
-
     backdrop-filter: blur(7px);
     margin: 300px auto;
     padding: 0;
@@ -226,15 +235,15 @@ footer p {
 }
 
 .name_category h2 {
-    color: #A67956;;
+    color: #A67956;
 }
 
 .article_item {
-    display: grid;
     display: inline-block;
     background-color: transparent;
     padding: 10px;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .article_item h3 {
@@ -269,5 +278,9 @@ footer p {
 
 .search_shop li {
     margin-bottom: 20px;
+<<<<<<< Updated upstream
     color: #ffffff;
+=======
+    color: #a15711;
+>>>>>>> Stashed changes
 }

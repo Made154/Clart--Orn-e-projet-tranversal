@@ -3,8 +3,19 @@ body {
     height: 100vh;
     background-color: rgb(255, 255, 255);
 }
-.square {
+
+a {
+    text-decoration: none;
     margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 40%;
     border: 2px solid white;
     border-radius: 20px;

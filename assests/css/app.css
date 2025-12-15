@@ -1,29 +1,22 @@
+
 body {
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
-
-a {
-    text-decoration: none;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
 .square {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    margin-bottom: 50px;
     width: 40%;
-    padding: 0px;
     border: 2px solid white;
     border-radius: 20px;
     
+
     backdrop-filter: blur(7px);
+    margin: 300px auto;
+    padding: 0;
 }
 
-.Nom_boutique{
+
+.Nom_boutique {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -33,16 +26,16 @@ a {
     padding: 10px;
     transition: 0.3s;
     font-size: 55px;
-    margin-left: 5px;
-    margin-top: 10px;
-   font-family: "Playfair Display", serif;
+    margin: 10px 5px 0 5px;
 }
 
 .Nom_boutique:hover {
     color: white;
     transform: translateY(-10px);
 }
-.Lien{
+
+
+.Lien {
     text-decoration: none;
     display: inline-block;
     color: #ffffff;
@@ -51,19 +44,19 @@ a {
     margin-right: 10px;
     font-size: 20px;
 }
+
 .Lien:hover {
     transform: translateY(-10px);
 }
+
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin: 20px auto 40px auto;
 }
-
 
 form input[type="text"] {
     width: 250px;
@@ -81,7 +74,6 @@ form input[type="text"]:focus {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-
 form input[type="submit"] {
     padding: 12px 18px;
     border: 1px solid #ddd;
@@ -97,59 +89,147 @@ form input[type="submit"]:hover {
     background: #f5f5f5;
 }
 
-.navabar {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-}
 
-.navabar button {
-    font-size: 28px;
-    padding: 8px 12px;
+.navabar { 
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 100; 
+} 
+
+.navabar button { 
+    font-size: 28px; 
+    padding: 8px 12px; 
     cursor: pointer; 
-    transition: 0.3s;
-    border: 2px solid white;
-    border-radius: 20px;
-    
-
-    backdrop-filter: blur(7px);
+    transition: 0.3s; 
+    border: 2px solid white; 
+    border-radius: 20px; 
+    backdrop-filter: blur(7px); 
+} 
+.navabar ul { 
+    margin: 10px 0 0 0; 
+    padding: 12px; 
+    list-style: none; 
+    border: 2px solid white; 
+    border-radius: 20px; 
+    backdrop-filter: blur(7px); 
+    width: 150px; 
+    animation: fadeIn 0.25s ease; 
 }
 
-.navabar ul {
-    margin: 10px 0 0 0;
-    padding: 12px;
-    list-style: none;
+
+.presentation {
+    width: 80%;
+    margin: 500px auto;
     border: 2px solid white;
     border-radius: 20px;
-    
-
-    backdrop-filter: blur(7px);
-
-    width: 150px;
-    animation: fadeIn 0.25s ease;
+    backdrop-filter: blur(20px);
+    padding: 20px;
 }
 
-/*      CSS - Shop   */
+
+.ligne {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.bloc-image {
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.bloc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.bloc-texte {
+    color: white;
+    max-width: 600px;
+}
+
+.bloc-texte h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.bloc-texte p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+
+footer {
+    width: 100%;
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    padding: 1px;
+    text-align: center;
+    
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.footer-contact {
+    margin: 20px 0;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+
 .name_category {
     font-weight: bold;
     text-decoration: underline;
     color: white;
     font-family: "Copperplate", "Copperplate Gothic", serif;
+    margin-bottom: 10px;
 }
 
 .name_category h2 {
-    color: #ffffff;;
+    color: #A67956;;
 }
 
 .article_item {
-    display: flex;
+    display: grid;
     display: inline-block;
     background-color: transparent;
     padding: 10px;
     border-radius: 20px;
-    border:3px solid white;
-    backdrop-filter: blur(20px);
 }
 
 .article_item h3 {
@@ -182,7 +262,7 @@ form input[type="submit"]:hover {
     backdrop-filter: blur(20px);
 }
 
-.search_shop li{
+.search_shop li {
     margin-bottom: 20px;
     color: #ffffff;
 }

@@ -18,8 +18,7 @@
 
     <?php include('views/partials/_navbar.php') ?>
     <?php include ("models/bdd.php"); ?>
-
-   
+    
     <main class="container">
     <?php
         $page = $_GET['page'] ?? 'home';

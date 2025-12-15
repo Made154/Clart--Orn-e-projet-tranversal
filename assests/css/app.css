@@ -4,12 +4,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-a {
-    text-decoration: none;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
 .square {
     position: absolute;
     top: 50%;

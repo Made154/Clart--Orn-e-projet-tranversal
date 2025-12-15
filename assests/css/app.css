@@ -2,6 +2,11 @@ body {
     height: 100vh;
     background-color: rgb(255, 255, 255);
 }
+
+a {
+    text-decoration: none;
+}
+
 .square {
     position: absolute;
     top: 50%;
@@ -137,7 +142,7 @@ form input[type="submit"]:hover {
 }
 
 .article_item {
-    display: grid;
+    display: flex;
     display: inline-block;
     background-color: bisque;
     padding: 10px;

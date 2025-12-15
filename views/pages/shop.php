@@ -1,6 +1,7 @@
 <?php include('views/partials/_search.php') ?>
 
-    <h2 class=name_category>Bureau</h2><a href="index.php?page=add-product">Ajouter</a>
+    <a href="index.php?page=add-product">Ajouter</a>
+    <h2 class=name_category>Bureau</h2>
         <div class=article>
             <?php 
                 $id_category = 1;

@@ -1,23 +1,8 @@
-<<<<<<< Updated upstream
 
 body {
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-}
-
-.square {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-=======
->>>>>>> Stashed changes
-
-body {
-    min-height: 100vh;
     margin: 0;
 }
-
 
 .square {
     margin-bottom: 50px;
@@ -278,9 +263,5 @@ footer p {
 
 .search_shop li {
     margin-bottom: 20px;
-<<<<<<< Updated upstream
     color: #ffffff;
-=======
-    color: #a15711;
->>>>>>> Stashed changes
 }

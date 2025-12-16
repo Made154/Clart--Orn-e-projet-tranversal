@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <?php endif; ?>
 
     <form action="../../traitement/connexion_traitement.php" method="POST" class="form">
-        <div class="bloc-texte">
+        <div class="inscri">
             <label>Email</label>
             <input type="email" name="email" required>
 
@@ -23,10 +23,8 @@ if (session_status() === PHP_SESSION_NONE) {
             <button type="submit">Se connecter</button>
         </div>
     </form>
-    <div class="Liencon">
             <p class="link-inscription">
             Pas encore de compte ?
-            <a href="inscription.php">Créer un compte</a>
+            <a href="index.php?page=inscription">Crée un compte</a>
             </p>
-    </div>
 

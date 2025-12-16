@@ -19,5 +19,6 @@
 
     <div class="footer">
         <p>© 2025 Clarté Ornée — Tous droits réservés</p>
+        <a href="index.php?page=mentions-legales" class="Lien">Mentions légales</a>
     </div>
 </footer>

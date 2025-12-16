@@ -5,6 +5,7 @@
 
     <?php require('models/add.php') ?>
 
+
     <div class="add-form">
         <form action="index.php?page=add-product" method="POST">
             <label for="name_new">Entrez le nom du produit : </label>
@@ -17,8 +18,9 @@
             <input type="text" name="price" placeholder="€" autocomplete="price">
             <label for="name_new">Entrez le type en id du produit : </label>
             <input type="text" name="id_category" placeholder="ID" autocomplete="type">
-            <button class="btn">Ajouter</button>
+            <button>Ajouter</button>
         </form>
     </div>
+</section>
 
 </body>

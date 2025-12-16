@@ -36,11 +36,10 @@ if (!isset($_SESSION['id_basket'])) {
 
 <body>
 
-<h1>Mon panier</h1>
 
 
 <?php if (empty($basketItems)): ?>
-    <p style="color:white; text-align:center;">Votre panier est vide.</p>
+    <h1 style="color:white; text-align:center;">Votre panier est vide.</h1>
 
 <?php else: ?>
     <?php $grandTotal = 0; ?>

@@ -149,6 +149,24 @@ form input[type="submit"]:hover {
     border-radius: 12px;
 }
 
+
+.bloc-image-panier {
+    width: 500px;   
+    height: 300px;   
+    flex-shrink: 0;
+    display: flex;    
+    overflow: hidden; 
+}
+
+.bloc-image-panier img {
+    width: 100%;   
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
 .bloc-texte {
     color: white;
     max-width: 600px;
@@ -219,8 +237,40 @@ footer p {
     margin-bottom: 10px;
 }
 
+
+
 .name_category h2 {
     color: #ffffff;
+}
+
+.remove-from-basket {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto 40px auto;
+}
+
+
+.basket_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px auto;
+    border: 3px solid white;
+    backdrop-filter: blur(20px);
+    width: fit-content;
+}
+
+.basket_item img {
+    width: 500px; 
+    height: 300px; 
+    border-radius: 20px;
+    border: 3px solid white;
+    object-fit: cover;
 }
 
 .article_item {

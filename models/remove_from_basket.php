@@ -43,29 +43,32 @@ $existing = $stmt->fetch();
 
 if ($existing) {
 
-    $stmt = $db->prepare("
-        UPDATE basket_items
-        SET quantity = quantity + :qty
-        WHERE id = :id
-    ");
-    $stmt->execute([
-        ':qty' => $quantity,
-        ':id'  => $existing['id']
-    ]);
-} else {
+    if ($existing['quantity'] <= $quantity) {
+        $stmt = $db->prepare("
+            DELETE FROM basket_items
+            WHERE id = :id
+        ");
+        $stmt->execute([
+            ':id' => $existing['id']
+        ]);
+    } else {
 
-    $stmt = $db->prepare("
-        INSERT INTO basket_items (id_basket, id_article, quantity)
-        VALUES (:id_basket, :id_article, :quantity)
-    ");
-    $stmt->execute([
-        ':id_basket' => $_SESSION['id_basket'],
-        ':id_article' => $articleId,
-        ':quantity'   => $quantity
-    ]);
+        $stmt = $db->prepare("
+            UPDATE basket_items
+            SET quantity = quantity - :qty
+            WHERE id = :id
+        ");
+        $stmt->execute([
+            ':qty' => $quantity,
+            ':id'  => $existing['id']
+        ]);
+    }
+
+} else {
+    die("Article not found in the basket.");
 }
 
-header("Location: ../index.php?page=shop");
+header("Location: ../index.php?page=my-basket");
 
 exit;
 ?>

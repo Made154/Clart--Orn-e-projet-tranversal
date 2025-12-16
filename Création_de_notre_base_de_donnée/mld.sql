@@ -180,16 +180,47 @@ INSERT INTO article VALUES
 
 -- Catégorie 7: Enfants (61–70)
 INSERT INTO article VALUES
-(61,7,'Cloudy','Douce pour bébé.',24.99,'cloudy.jpg',1,0),
-(62,7,'Teddy','Chambre enfant.',19.99,'teddy.jpg',0,1),
-(63,7,'Rocket','Thème espace.',29.99,'rocket.jpg',1,0),
-(64,7,'Rainbow','Couleurs LED.',22.99,'rainbow.jpg',0,0),
-(65,7,'Kitty','Adorable.',18.99,'kitty.jpg',1,0),
-(66,7,'Moon','Veilleuse.',16.99,'moon.jpg',0,0),
-(67,7,'Stars','Projette des étoiles.',34.99,'stars.jpg',1,0),
-(68,7,'Dino','Dinosaure.',21.99,'dino.jpg',0,0),
-(69,7,'Car','Rouge.',17.99,'car.jpg',0,1),
-(70,7,'Unicorn','Rose pastel.',26.99,'unicorn.jpg',1,0);
+(1, 1, 'Aurora', 'Lampe brillante', 49.90, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1yj9EvG9jPf78H7-90SBRszUl2a-ZXWFR2w&s', 0, 0),
+(2, 1, 'Nordik', 'Bois scandinave', 59.90, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwT9Dm2BMMfJgRiRUrSyHFJReKZFWvzsMzpw&s', 0, 0),
+(3, 1, 'ZenLight', 'Ambiance zen', 39.90, 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSn-eDQ16ipZRkJWopYloYO-SzvIyhUtR76s837DrYJ5rYwXkEYejwSxGmz32yrfSvv8QHeWfP4er3YLlOls_3EbBfgBmnrcXZAIt_YEcdJ4wxpJo_a1xou&usqp=CAc', 0, 1),
+(4, 1, 'Crystal', 'Verre élégant', 89.90, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpBUHjm-0RwyLRVZztlFOgtpdheJBRHs7mA&s', 0, 0),
+(5, 1, 'Vintage', 'Style rétro', 55.90, 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS9qIpPhygnOo3RzzJfB9mglY3R4m6D3t5265sznF97qH0b9mEPQr-vuUiKwWi8S8E70cKOdO6jTzMFPVFVBaTimldt63P7tme0Yjtl7v4gylizCrf31KrBkQ&usqp=CAc', 0, 0),
+
+(6, 2, 'TreeBeam', 'Sur pied', 120.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzt4RUxkYWepmz7ZeOUfYiyvIA3OiGEpSI4Q&s', 0, 0),
+(7, 2, 'UrbanSteel', 'Métal', 130.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR943c55rGbhFX903Yt2WqAqF3zt69on-CJOQ&s', 0, 0),
+(8, 2, 'TriLux', 'LED', 110.00, 'https://lw-cdn.com/images/9CEC711EE9CE/k_cedffe6f8c447a4930dd99bf5ef6c2dc;w_1600;h_1600;q_100/9621246.jpg', 0, 1),
+(9, 2, 'Classic', 'Classique', 99.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcvdfjeNozUrJWyxx8rEr96cvDlYUAqbwXg1xDnJtsg&s', 0, 0),
+(10, 2, 'ArcLine', 'Arc moderne', 145.00, 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCbgfefr1vErZSS5rmTE5J0kuf4hhHuMgtvvWz8ipmySzEahEu_3k6g43vEeyLKvvcwJrNORn_51POeylN6V2LI3jQbXAGtvEpjCDkBF0&usqp=CAc', 1, 0),
+
+(11, 3, 'ClearOrb', 'Globe', 49.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-b_rrnBGJwJCvwcZ7lminnwTehauFxAezFQ&s', 0, 0),
+(12, 3, 'TriSphere', '3 globes', 109.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVaow9YeJmE7uIPjXkYwN7AbhySec1Y82uHw&s', 0, 1),
+(13, 3, 'Rattan', 'Bohème', 59.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ48Gi8kVZiTPQaLFs4lB7wNZ9lVedJT6TVEg&s', 0, 0),
+(14, 3, 'HaloRing', 'LED', 89.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1iBx6vBd6ZqTtIxr_Vmwhs_kDTv6JgOs_w&s', 0, 0),
+(15, 3, 'TubeLine', 'Moderne', 79.99, 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSky8Vq2kOTyw6izRX7wq1eDoXm4FApiLCKk6fapW21KGMIsgEtvhbBp013vSVmMqf5GNxZp3fy4LbTlH5hzWha31csv2k_Pc1BQfBFeVqIWuJvq9s_SaNy&usqp=CAc', 1, 0),
+
+(16, 4, 'WallBeam', 'LED', 34.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXaqfx7WABerXWkWHJtdjDqXIl-iNmuEOrA&s', 0, 0),
+(17, 4, 'GlassWave', 'Verre', 49.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsiaLXCIuSlaea_A15Jo8xer-gQW7xt4wbrQ&s', 0, 1),
+(18, 4, 'RattanWall', 'Naturel', 29.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScQ2m82ZqyEXNON8uS2c6PAKl8ckAamRYcWg&s', 0, 0),
+(19, 4, 'SoftBall', 'Douce', 24.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYogpyU1zlVVntt-idGS9px3IRceX9U5X1A&s', 0, 0),
+(20, 4, 'RingWall', 'Anneau', 59.99, 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSnwg34TKD51VJQTpSQ1szxxkWxQtHSsBAZfVg8Xr65IBU8FD6IIDVq6nnT1XxPWOuWVAycxZuEbAWzoyCdOtnTzMgtBWQa4YcQ41EooU7IVd-Ku2mREm9C&usqp=CAc', 0, 1),
+
+(21, 5, 'FlexiDesk', 'Flexible', 34.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4itwEcOM5IOhjI_afrdyhbeDb5gJa6qD2Q&s', 0, 0),
+(22, 5, 'Architect', 'Réglable', 44.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9My63M73GIyNKMh2fob2M-mcwNgIQEwdenA&s', 0, 0),
+(23, 5, 'LongArm', 'Large', 49.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjSNTwEn59lMbR5XTMHttdCXjsjC6XVo1Eg&s', 1, 0),
+(24, 5, 'MetalDesk', 'Industriel', 39.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8fZOvgh9RqEHojcK3zpo4_6I1BypZ5LDpw&s', 0, 1),
+(25, 5, 'Recharge', 'Batterie', 29.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjqF3NVL6-2aRtLdmHyAa4ysm1pwGd3-pPfw&s', 0, 0),
+
+(26, 6, 'NeoStrip', 'Ruban LED RGB', 29.99, 'https://www.silamp.fr/cdn/shop/products/E-a-1-zoom.jpg?v=1691765837&width=800', 1, 0),
+(27, 6, 'LumaPanel', 'Panneau LED mural', 89.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6GCtMX7hoye9vqDcZ25DgVKHupeZnoSTi9gwT95yBVw&s', 0, 0),
+(28, 6, 'SpotLine', 'Spot LED encastrable', 24.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS33GUeJ4NHG2tIZABZDMdrDzjN73wTik9lbA&s', 0, 0),
+(29, 6, 'EdgeLight', 'Barre LED indirecte', 49.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDgcjpwbZGstPKOR0JXNhRnwqJS3VY3ye_Q&s', 0, 1),
+(30, 6, 'SmartGlow', 'LED connectée WiFi', 39.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkO3fuEYiARURZNwtuu-8fFENhLuVPluurgw&s', 1, 0),
+
+(31, 7, 'GardenSpike', 'Piquet lumineux LED', 34.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qNhxuh1Ufu_s4A9zfpWQIpNxM7WZd0bIbw&s', 0, 0),
+(32, 7, 'WallOutdoor', 'Applique murale extérieure', 59.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6LXqSlPyaJF5pawmOsNeSVWCMgCQSnrOOxg&s', 1, 0),
+(33, 7, 'SolarBeam', 'Lampe solaire jardin', 29.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfTCZONphtQjgeXfsxBKBLlD3021fLCn2nTw&s', 0, 1),
+(34, 7, 'PathLight', 'Borne lumineuse extérieure', 79.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShdn8og-WQVG2UsTH0imiPZl4B8KIRhVP3Mg&s', 0, 0),
+(35, 7, 'FloodMax', 'Projecteur LED extérieur', 99.99, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRdB7-Xlz-lu-dCN9pLuvOM2W8G0qsOU5bSg&s', 0, 1);
 
 INSERT INTO basket VALUES
 (1, 2),

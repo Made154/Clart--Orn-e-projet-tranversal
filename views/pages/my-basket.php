@@ -64,7 +64,7 @@ if (!isset($_SESSION['id_basket'])) {
                     <p><strong>Quantité :</strong> <?= (int)$item['quantity'] ?></p>
                     <p><strong>Total :</strong> <?= number_format($total, 2) ?> €</p>
                     
-                    <form action="/Clart--Orn-e-projet-tranversal/models/remove_from_basket.php" method="POST" class="remove-from-basket">
+                    <form action="models/remove_from_basket.php" method="POST" class="remove-from-basket">
                         <input type="hidden" name="basket_item_id" value="<?= (int)$item['basket_item_id'] ?>">
 
                         <input type="hidden" name="article_id" value="<?= (int)$item['article_id'] ?>">
@@ -75,7 +75,7 @@ if (!isset($_SESSION['id_basket'])) {
                     </form>
 
 
-                        <a class="Lien" href="/Clart--Orn-e-projet-tranversal/index.php?page=product&id=<?= (int)$item['article_id'] ?>">
+                        <a class="Lien" href="index.php?page=product&id=<?= (int)$item['article_id'] ?>">
                             Voir l’article
                         </a>
                 </div>

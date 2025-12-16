@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <form action="/Clart--Orn-e-projet-tranversal/models/add_to_basket.php" method="POST">
+    <form action="models/add_to_basket.php" method="POST">
         <input type="hidden" name="article_id" value="<?php echo $article ['id']; ?>">
         <input type="number" name="quantity" value="1" min="1" max="100">
         <button type="submit">🛒 Ajouter au Panier</button>

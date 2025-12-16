@@ -64,10 +64,10 @@
 					autocomplete="price"
 					value="<?= $article['price'] ?>" />
 			</label>
-		</fieldset>
-		<input
+			<input
 			type="submit"
 			value="Mettre à jour" />
+		</fieldset>
 	</form>
 
 	<form method="post">

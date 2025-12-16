@@ -21,7 +21,12 @@
         }
 
         if (!empty($conditions)) {
-        $sql = "SELECT a.name AS name_article, c.name AS category, a.illustration AS illustration, a.description
+        $sql = "SELECT 
+                    a.id AS article_id,
+                    a.name AS name_article,
+                    c.name AS category,
+                    a.illustration,
+                    a.description
                 FROM article a
                 JOIN category c ON a.id_category = c.id
                 WHERE " . implode(" OR ", $conditions);
@@ -41,22 +46,27 @@
 </form>
 
 <?php if (@$afficher=="oui") { ?>
-<div id="resultats" class=search_shop>
-    <div id="nbr" class=résultat>
-        <?php  
-            if ((count($tab))>1) {
-                echo count($tab) . " résultats trouvés";
-            }else { echo count($tab) . " résultat trouvé"; 
-            }
-        ?>
-    </div>
-        <?php for($i=0;$i<count($tab);$i++):  ?>
-            <li>
-                <strong><?php echo htmlspecialchars($tab[$i]['name_article']); ?></strong>
-                (<?php echo htmlspecialchars($tab[$i]['category']); ?>)<br>
-                <?php //echo htmlspecialchars($tab[$i]['illustration']); ?><br>
-                <?php echo htmlspecialchars($tab[$i]['description']); ?>
-            </li>
-        <?php endfor; ?>
-    <?php } ?>
-</div>
+<ul class="result-list">
+<?php for ($i = 0; $i < count($tab); $i++): ?>
+    <li class="result-item">
+        <div>
+            <strong><h3><?php echo htmlspecialchars($tab[$i]['name_article']); ?></h3></strong><br>
+            <a href="index.php?page=product&id=<?php echo $tab[$i]['article_id']; ?>">
+                <img 
+                    src="<?php echo htmlspecialchars($tab[$i]['illustration']); ?>" 
+                    alt="<?php echo htmlspecialchars($tab[$i]['name_article']); ?>" 
+                >
+            </a>
+        </div>
+
+        <div class="result-content">
+            <em><?php echo htmlspecialchars($tab[$i]['category']); ?></em>
+            <br>
+            <br>
+            <?php echo htmlspecialchars($tab[$i]['description']); ?>
+        </div>
+
+    </li>
+<?php endfor; ?>
+</ul>
+<?php } ?>

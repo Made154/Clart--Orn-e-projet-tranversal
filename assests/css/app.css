@@ -212,6 +212,9 @@ footer p {
     opacity: 1;
 }
 
+.shop {
+    margin-left: 100px;
+}
 
 .name_category {
     font-weight: bold;
@@ -233,6 +236,7 @@ footer p {
     margin: 10px;
     border: 3px solid white;
     backdrop-filter: blur(20px);
+    margin-bottom: 20px;
 }
 
 .article_item h3 {
@@ -255,27 +259,41 @@ footer p {
     height: 100px;
 }
 
-.résultat {
-    display: inline-block;
-    border: 2px solid #808080;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: transparent;
-    margin-bottom: 30px;
-    color: white;
-    backdrop-filter: blur(20px);
+.article_item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-.search_shop li {
+.result-list {
+    list-style: none;
+}
+
+.result-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    height: auto;
     margin-bottom: 20px;
-    color: white;
+    color:#ffffff;
+    border: 3px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 10px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.result-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid white;
 }
+
+.result-content {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
 
 .form_modif {
     display: flex;
@@ -297,14 +315,37 @@ button {
 }
 
 .add-form {
-    width: 400px; 
-    margin: 100px 380px;
-    display: inline-block;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 10px;
     color: white;
     border: 3px solid white;
     border-radius: 10px;
     backdrop-filter: blur(20px);
+}
+
+.product_description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    color: white;
+}
+
+.product_description img {
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 400px;
+    height: auto;
+}
+
+input {
+    border-radius: 5px;
 }
 
 h1 {

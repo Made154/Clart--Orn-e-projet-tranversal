@@ -15,12 +15,13 @@ if (isset($id_category) && is_numeric($id_category)) {
 
 ?>
 
-    <a href="index.php?page=product&id=<?php echo htmlspecialchars($article['id']); ?>">
 
         <div class="article_item">
             <h3><?php echo htmlspecialchars($article['name']); ?></h3>
-
-            <img src='<?php echo htmlspecialchars($article['illustration']); ?> alt=''>
+            
+            <a href="index.php?page=product&id=<?php echo htmlspecialchars($article['id']); ?>">
+                <img src="<?php echo htmlspecialchars($article['illustration']); ?>" alt="">
+            </a>
             <p>Prix : <?php echo htmlspecialchars($article['price']); ?> €</p>
         </div>
 

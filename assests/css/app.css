@@ -316,7 +316,7 @@ h1 {
 }
 
 .Liencon {
-    margin-left: 425px;
+    margin-left: 420px;
     text-decoration: none;
     display: inline-block;
     color: #ffffff;
@@ -514,7 +514,22 @@ h1 {
     margin-right: 10px;
     font-size: 20px;
 }
+.inscri {
+    display: flex;
+    flex-direction: column;
+    color:#ffffff
+}
 
-.Liencon:hover {
+.link-inscription {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.link-inscription:hover {
     transform: translateY(-10px);
 }

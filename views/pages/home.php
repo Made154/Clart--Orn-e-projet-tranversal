@@ -17,3 +17,19 @@
         </div>
     </div>
 </section>
+
+<div class="contenu__geral">
+    <div class="container">
+        <div class="container-carrossel">
+            <div class="carrossel">
+                <div class="carrossel-item"><image src="Video/image1.png" width ="170px"></div>
+                <div class="carrossel-item"><image src="Video/image1.png" width ="170px"></div>
+                <div class="carrossel-item"><image src="Video/image1.png" width ="170px"></div>
+                <div class="carrossel-item"><image src="Video/image1.png" width ="170px"></div>
+                <div class="carrossel-item"><image src="Video/image1.png" width ="170px"></div>
+                <div class="carrossel-item"><image src="Video/image1.png" width ="170px"></div>
+
+            </div>
+        </div>
+    </div>
+</div>

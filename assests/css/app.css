@@ -1,9 +1,27 @@
 body {
-  height: 100vh;
-  background-color: #ffffff;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }
 
+a {
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40%;
+    padding: 0px;
+    border: 2px solid white;
+    border-radius: 20px;
+    
+    backdrop-filter: blur(7px);
+}
 
 .Nom_boutique{
     text-decoration: none;
@@ -11,56 +29,38 @@ body {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
-    color: #A67956;
-    border: 2px solid #000000;
-    border-radius: 50px;
+    color: #ffffff;
     padding: 10px;
-    background-color: #ffffff;
     transition: 0.3s;
     font-size: 55px;
     margin-left: 5px;
+    margin-top: 10px;
+   font-family: "Playfair Display", serif;
 }
 
+.Nom_boutique:hover {
+    color: white;
+    transform: translateY(-10px);
+}
 .Lien{
     text-decoration: none;
     display: inline-block;
-    color: #A67956;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 50px;
+    color: #ffffff;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
     transition: 0.3s;
     margin-right: 10px;
+    font-size: 20px;
 }
-
-a:hover{
-    color: black
+.Lien:hover {
+    transform: translateY(-10px);
 }
-
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.Placement{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-    
-}
-
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0;
-    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 20px;
 }
 
@@ -97,6 +97,39 @@ form input[type="submit"]:hover {
     background: #f5f5f5;
 }
 
+.navabar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.navabar button {
+    font-size: 28px;
+    padding: 8px 12px;
+    cursor: pointer; 
+    transition: 0.3s;
+    border: 2px solid white;
+    border-radius: 20px;
+    
+
+    backdrop-filter: blur(7px);
+}
+
+.navabar ul {
+    margin: 10px 0 0 0;
+    padding: 12px;
+    list-style: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    
+
+    backdrop-filter: blur(7px);
+
+    width: 150px;
+    animation: fadeIn 0.25s ease;
+}
+
 /*      CSS - Shop   */
 .name_category {
     font-weight: bold;
@@ -106,19 +139,21 @@ form input[type="submit"]:hover {
 }
 
 .name_category h2 {
-    color: #A67956;;
+    color: #ffffff;;
 }
 
 .article_item {
-    display: grid;
+    display: flex;
     display: inline-block;
-    background-color: bisque;
+    background-color: transparent;
     padding: 10px;
     border-radius: 20px;
+    border:3px solid white;
+    backdrop-filter: blur(20px);
 }
 
 .article_item h3 {
-    color:#A67956;
+    color:#ffffff;
 }
 
 .article_item img {
@@ -128,10 +163,26 @@ form input[type="submit"]:hover {
 }
 
 .article_item p {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .article img {
     width: 100px;
     height: 100px;
+}
+
+.résultat {
+    display: inline-block;
+    border: 2px solid #828282;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    margin-bottom: 30px;
+    color: #ffffff;
+    backdrop-filter: blur(20px);
+}
+
+.search_shop li{
+    margin-bottom: 20px;
+    color: #ffffff;
 }

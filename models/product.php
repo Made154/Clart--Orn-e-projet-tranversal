@@ -2,7 +2,7 @@
 
 include('bdd.php');
 
-if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+if (isset($_GET['id'])) {
 
 
     $article_id = $_GET['id'];

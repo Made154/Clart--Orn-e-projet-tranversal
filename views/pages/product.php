@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarté Ornée</title>
-    <link rel="stylesheet" href="../../assests/css/product.css">
-
-</head>
-
 <?php require('../../models/product.php'); ?>
 
 <h1><?php echo $article['name']; ?></h1>
@@ -23,7 +13,7 @@
     <input type="hidden" name="article_id" value="<?php echo $article ['id']; ?>">
     <input type="number" name="quantity" value="1" min="1" max="100">
     <button type="submit">🛒 Ajouter au Panier</button>
-    <?php var_dump($article); 
-          var_dump($_SESSION);
-?>
+
 </form>
+
+<a href="../../index.php?page=update&id=<?php echo $article['id']; ?>">Modifier</a>

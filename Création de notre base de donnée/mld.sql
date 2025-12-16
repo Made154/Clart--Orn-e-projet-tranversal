@@ -25,7 +25,7 @@ CREATE TABLE category (
 );
 
 CREATE TABLE article (
-    id INT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     id_category INT NOT NULL,
     name VARCHAR(100),
     description TEXT,

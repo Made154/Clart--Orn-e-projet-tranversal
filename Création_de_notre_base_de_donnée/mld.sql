@@ -1,7 +1,7 @@
 -- -------------------------------------------- MLD ------------------------------------------
-DROP DATABASE clare_ornee;
-CREATE DATABASE clare_ornee;
-USE clare_ornee;
+DROP DATABASE clarte_ornee;
+CREATE DATABASE clarte_ornee;
+USE clarte_ornee;
 CREATE TABLE role (
     id INT PRIMARY KEY,
     name VARCHAR(100)

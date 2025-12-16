@@ -272,7 +272,7 @@ footer p {
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .form_modif {
@@ -285,9 +285,24 @@ form {
 }
 
 button {
-    text-decoration: none;
     padding: 10px;
+    border-radius: 20px;
+}
+
+.btn {
+    text-decoration: none;
     color: black;
+}
+
+.add-form {
+    width: 400px; 
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
 }
 
 h1 {

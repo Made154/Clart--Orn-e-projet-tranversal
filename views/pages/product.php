@@ -13,6 +13,13 @@
             <h3>Description</h3>
             <p><?php echo $article['description']; ?></p>
         <p class="prix">Prix : <?php echo $article['price']; ?> € </p>
+            <?php if ($article['is_new']): ?>
+                <h3 class="badge new">Nouveau</h3>
+            <?php endif; ?>
+
+            <?php if ($article['is_promo']): ?>
+                <h3 class="badge promo">Promo</h3>
+            <?php endif; ?>
         </div>
     </div>
 

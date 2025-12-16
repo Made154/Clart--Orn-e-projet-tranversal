@@ -167,8 +167,6 @@ form input[type="submit"]:hover {
     border-radius: 12px;
 }
 
-
-
 .bloc-texte {
     color: white;
     max-width: 600px;
@@ -392,6 +390,33 @@ button {
     border-radius: 20px;
     width: 400px;
     height: auto;
+}
+
+.new {
+    display: inline-block;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.promo {
+    display: inline-block;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.badge {
+  animation: blink-animation 2s infinite;
+}
+
+@keyframes blink-animation {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
 }
 
 input {

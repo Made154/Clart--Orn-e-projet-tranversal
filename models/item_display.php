@@ -14,17 +14,14 @@ if (isset($id_category) && is_numeric($id_category)) {
     foreach ($articles_by_category as $article) {
 
 ?>
-
-
-        <div class="article_item">
-            <h3><?php echo htmlspecialchars($article['name']); ?></h3>
-            
-            <a href="index.php?page=product&id=<?php echo htmlspecialchars($article['id']); ?>">
-                <img src="<?php echo htmlspecialchars($article['illustration']); ?>" alt="">
-            </a>
-            <p>Prix : <?php echo htmlspecialchars($article['price']); ?> €</p>
-        </div>
-
+    <div class="article_item">
+        <h3><?php echo htmlspecialchars($article['name']); ?></h3>
+        
+        <a href="index.php?page=product&id=<?php echo htmlspecialchars($article['id']); ?>">
+            <img src="<?php echo htmlspecialchars($article['illustration']); ?>" alt="">
+        </a>
+        <p>Prix : <?php echo htmlspecialchars($article['price']); ?> €</p>
+    </div>
 <?php 
     }
 } else {

@@ -152,8 +152,7 @@ INSERT INTO basket VALUES
 INSERT INTO basket_items VALUES
 (1, 1, 1, 1),
 (2, 1, 12, 2),
-(3, 2, 22, 1),
-(4, 3, 45, 3);
+(3, 2, 22, 1);
 
 INSERT INTO payment VALUES
 (1, 2, 179.97, '2024-03-20','CB Visa','Payé'),
@@ -162,5 +161,4 @@ INSERT INTO payment VALUES
 
 INSERT INTO notice VALUES
 (1, 2, 1, 5, 'Très bel éclairage, j’adore !', '2024-03-21'),
-(2, 3, 12, 4, 'Bon lampadaire mais un peu cher.', '2024-03-22'),
-(3, 5, 45, 5, 'Parfait pour mon bureau !', '2024-03-23');
+(2, 3, 12, 4, 'Bon lampadaire mais un peu cher.', '2024-03-22');

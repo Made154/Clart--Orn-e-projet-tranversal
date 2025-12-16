@@ -5,7 +5,6 @@ if (session_status() === PHP_SESSION_NONE) {
 ?>
 
 
-<div class="container">
     <div class="squareup">
         <h1>Connexion</h1>
     </div>
@@ -14,20 +13,20 @@ if (session_status() === PHP_SESSION_NONE) {
     <?php endif; ?>
 
     <form action="../../traitement/connexion_traitement.php" method="POST" class="form">
-        
-        <label>Email</label>
-        <input type="email" name="email" required>
+        <div class="bloc-texte">
+            <label>Email</label>
+            <input type="email" name="email" required>
 
-        <label>Mot de passe</label>
-        <input type="password" name="password" required>
+            <label>Mot de passe</label>
+            <input type="password" name="password" required>
 
-        <button type="submit">Se connecter</button>
+            <button type="submit">Se connecter</button>
+        </div>
     </form>
-    
-    <p class="link-inscription">
-    Pas encore de compte ?
-    <a href="inscription.php">Créer un compte</a>
-</p>
-
-</div>
+    <div class="Liencon">
+            <p class="link-inscription">
+            Pas encore de compte ?
+            <a href="inscription.php">Créer un compte</a>
+            </p>
+    </div>
 

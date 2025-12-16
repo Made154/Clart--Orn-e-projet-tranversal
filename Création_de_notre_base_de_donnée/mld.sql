@@ -11,7 +11,7 @@ CREATE TABLE messages (
     email VARCHAR(150) NOT NULL,
     message TEXT NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-)
+);
 
 CREATE TABLE user (
     id INT PRIMARY KEY,

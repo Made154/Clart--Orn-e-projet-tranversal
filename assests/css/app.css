@@ -220,7 +220,7 @@ footer p {
 }
 
 .name_category h2 {
-    color: #A67956;
+    color: #ffffff;
 }
 
 .article_item {
@@ -229,6 +229,8 @@ footer p {
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
+    border: 3px solid white;
+    backdrop-filter: blur(20px);
 }
 
 .article_item h3 {
@@ -239,6 +241,7 @@ footer p {
     width: 150px;
     height: auto;
     border-radius: 20px;
+    border: 3px solid white;
 }
 
 .article_item p {
@@ -264,4 +267,30 @@ footer p {
 .search_shop li {
     margin-bottom: 20px;
     color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form_modif {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+
+button {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
 }

@@ -1,19 +1,23 @@
-<?php require('../../models/product.php'); ?>
+<?php require('models/product.php'); ?>
 
-<h1><?php echo $article['name']; ?></h1>
+<link rel="stylesheet" href="assests/css/app.css">
 
-<div class="product_description">
-    <img src='<?php echo $article['illustration']; ?>' alt="">
-    <h3>Description</h3>
-    <p><?php echo $article['description']; ?></p>
-    <p class="prix">Prix : <?php echo $article['price']; ?> € </p>
-</div>
+<body>
+    <h1><?php echo $article['name']; ?></h1>
 
-<form action="ajouter_au_panier.php" method="POST">
-    <input type="hidden" name="article_id" value="<?php echo $article ['id']; ?>">
-    <input type="number" name="quantity" value="1" min="1" max="100">
-    <button type="submit">🛒 Ajouter au Panier</button>
-</form>
+    <div class="product_description">
+        <img src='<?php echo $article['illustration']; ?>' alt="">
+        <h3>Description</h3>
+        <p><?php echo $article['description']; ?></p>
+        <p class="prix">Prix : <?php echo $article['price']; ?> € </p>
+    </div>
 
-<a href="../../index.php?page=update&id=<?php echo $article['id']; ?>">Modifier</a>
+    <form action="ajouter_au_panier.php" method="POST">
+        <input type="hidden" name="article_id" value="<?php echo $article ['id']; ?>">
+        <input type="number" name="quantity" value="1" min="1" max="100">
+        <button type="submit">🛒 Ajouter au Panier</button>
+    </form>
+
+    <a href="index.php?page=update&id=<?php echo $article['id']; ?>">Modifier</a>
+</body>
 

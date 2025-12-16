@@ -15,7 +15,7 @@ if (isset($id_category) && is_numeric($id_category)) {
 
 ?>
 
-    <a href="views/pages/product.php?id=<?php echo htmlspecialchars($article['id']); ?>">
+    <a href="index.php?page=product&id=<?php echo htmlspecialchars($article['id']); ?>">
 
         <div class="article_item">
             <h3><?php echo htmlspecialchars($article['name']); ?></h3>

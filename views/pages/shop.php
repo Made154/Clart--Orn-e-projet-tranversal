@@ -1,6 +1,6 @@
 <?php include('views/partials/_search.php') ?>
 
-    <a href="index.php?page=add-product">Ajouter</a>
+    <button><a href="index.php?page=add-product" class="btn_ajouter">Ajouter</a></button>
     <h2 class=name_category>Bureau</h2>
         <div class=article>
             <?php 

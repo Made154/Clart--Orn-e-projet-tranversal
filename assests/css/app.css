@@ -271,7 +271,6 @@ footer p {
     color: white;
 }
 
-<<<<<<< Updated upstream
 form {
     display: flex;
     flex-direction: column;
@@ -328,7 +327,7 @@ h1 {
     text-decoration: none;
     display: inline-block;
     color: #ffffff;
-=======
+}
 
 .contenu__geral {
   width: 80%;
@@ -461,17 +460,12 @@ h1 {
     text-decoration: none;
     display: inline-block;
     color: white;
->>>>>>> Stashed changes
     padding: 10px;
     transition: 0.3s;
     margin-right: 10px;
     font-size: 20px;
 }
 
-<<<<<<< Updated upstream
 .Liencon:hover {
-=======
-.Lien:hover {
->>>>>>> Stashed changes
     transform: translateY(-10px);
 }

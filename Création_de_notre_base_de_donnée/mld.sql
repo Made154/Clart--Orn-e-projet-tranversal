@@ -6,6 +6,12 @@ CREATE TABLE role (
     id INT PRIMARY KEY,
     name VARCHAR(100)
 );
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+)
 
 CREATE TABLE user (
     id INT PRIMARY KEY,

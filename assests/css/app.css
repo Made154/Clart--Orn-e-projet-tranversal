@@ -243,7 +243,7 @@ footer p {
     width: 150px;
     height: auto;
     border-radius: 20px;
-    border: 3px solid white;
+    border: 3px solid white; 
 }
 
 .article_item p {
@@ -270,13 +270,6 @@ footer p {
     margin-bottom: 20px;
     color: white;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .form_modif {
     display: flex;
     flex-direction: column;
@@ -378,53 +371,109 @@ h1 {
   }
 }
 
+/* Cadre général */
 .cadre-info-services {
-    width: 80%;
+    width: 85%;
     margin: 100px auto;
     border: 2px solid white;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    padding: 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(18px);
+    padding: 40px;
 }
 
+/* Flex map + formulaire */
 .bloc-info-services {
     display: flex;
     align-items: center;
-    gap: 60px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
 }
 
+/* Bloc map */
 .bloc-maps {
-    margin: 20px;
     width: 500px;
-    height: 500px;
+    height: 420px;
     flex-shrink: 0;
 }
 
 .bloc-maps iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
-.bloc-texte {
+/* Bloc formulaire */
+.contact-container {
+    flex: 1;
     color: white;
-    max-width: 300px;
+    max-width: 600px;
 }
 
-.bloc-texte h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+/* Titres */
+.contact-container h2 {
+    font-size: 36px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
-.bloc-texte p {
+.contact-container p {
     font-size: 18px;
-    line-height: 1.6;
+    margin-bottom: 25px;
     opacity: 0.9;
 }
+
+/* Formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid white;
+    border-radius: 30px;
+
+    color: white;
+    font-size: 15px;
+}
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+.contact-form textarea {
+    resize: none;
+    border-radius: 20px;
+}
+
+
+.contact-form button {
+    align-self: flex-start;
+    padding: 12px 30px;
+
+    border-radius: 30px;
+    border: 2px solid white;
+
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: black;
+}
+
 
 .info-services-square {
     margin-bottom: 50px;

@@ -342,14 +342,59 @@ footer p {
     max-width: 600px;
 }
 
-
 .form_modif {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: transparent;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
     backdrop-filter: blur(20px);
+    border: 3px solid white;
+    text-align: center;
+}
+
+.form_modif label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form_modif input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form_modif input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    outline: none;
+}
+
+.form_modif button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form_modif button:hover {
+    background-color: #0056b3;
 }
 
 button {
@@ -363,16 +408,57 @@ button {
 }
 
 .add-form {
-    width: 400px;
-    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
-    color: white;
-    border: 3px solid white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: transparent;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
     backdrop-filter: blur(20px);
+    border: 3px solid white
+}
+
+.add-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.add-form input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.add-form input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    outline: none;
+}
+
+.add-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-form button:hover {
+    background-color: #0056b3;
 }
 
 .product_description {

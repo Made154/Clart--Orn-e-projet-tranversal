@@ -21,6 +21,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             // Mot de passe correct → créer session
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_name'] = $user['name'];
+            $_SESSION['user_surname'] = $user['surname'];
             $_SESSION['user_email'] = $user['email'];
             $_SESSION['user_role'] = $user['id_role'];
 

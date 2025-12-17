@@ -20,14 +20,14 @@ if (isset($_SESSION['success'])) {
 }
 ?>
 
-<form action="../../models/inscription_traitement.php" method="POST">
+<form action="models/inscription_traitement.php" method="POST">
     <div class="inscri">
 
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" required>
+        <input type="text" id="name" name="name" required>
 
         <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" required>
+        <input type="text" id="surname" name="surname" required>
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>

@@ -3,7 +3,7 @@
 
     <div class="bloc ligne">
         <div class="bloc-image">
-            <img src="assets/img/image1.png" alt="Image présentation" width="170px">
+            <img src="assests/img/image1.png" alt="Image présentation" width="170px">
         </div>
         <div class="bloc-texte">
             <h2>Un savoir-faire unique</h2>

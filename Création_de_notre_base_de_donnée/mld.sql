@@ -85,6 +85,28 @@ CREATE TABLE search_bar (
     desgc VARCHAR(255) NOT NULL,
     descg VARCHAR(255) NOT NULL
 );
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_user INT NOT NULL,
+    total_amount DECIMAL(10,2),     
+    shipping_address VARCHAR(255), 
+    shipping_postal_code VARCHAR(10), 
+    shipping_country VARCHAR(50),  
+    shipping_city VARCHAR(100),   
+    order_status VARCHAR(50),    
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    FOREIGN KEY (id_user) REFERENCES user(id)
+);
+
+CREATE TABLE order_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_order INT NOT NULL,
+    id_article INT NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10,2), 
+    FOREIGN KEY (id_order) REFERENCES orders(id),
+    FOREIGN KEY (id_article) REFERENCES article(id)
+);
 
 INSERT INTO role VALUES
 (1, 'admin'),

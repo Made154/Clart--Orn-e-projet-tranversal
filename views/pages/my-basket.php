@@ -29,7 +29,7 @@ if (!isset($_SESSION['id_basket'])) {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <title>Mon panier</title>
     <link rel="stylesheet" href="/Clart--Orn-e-projet-tranversal/assets/css/app.css">
 </head>
@@ -82,11 +82,21 @@ if (!isset($_SESSION['id_basket'])) {
         </div>
 
     <?php endforeach; ?>
-    <div class ="square"> 
+<div class="square"> 
+    <form action="index.php?page=checkout" method="POST" style="text-align:center; margin-top:10px;">
+
+        <input type="hidden" name="grand_total" value="<?= $grandTotal ?>">
+
+        <input type="hidden" name="is_logged_in" value="<?= isset($_SESSION['id_user']) ? 1 : 0 ?>">
+
+        <button type="submit" class="Lien" style="color: white; margin-top:10px;">Passer à la caisse</button>
+    </form>
+
     <h2 style="color:white; text-align:center; margin-top:10px;">
         Total du panier : <?= number_format($grandTotal, 2) ?> €
     </h2>
-    </div>
+</div>
+
 
 <?php endif; ?>
 

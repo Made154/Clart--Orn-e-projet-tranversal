@@ -1,7 +1,22 @@
 <?php
-session_start(); // toujours au tout début du fichier
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
+?>
 <footer>
+
+    <?php if (isset($_SESSION['user_name']) && isset($_SESSION['user_surname'])): ?>
+        <p>
+            Connecté : <strong><?= htmlspecialchars($_SESSION['user_name'] . ' ' . $_SESSION['user_surname']); ?></strong>
+        </p>
+        <form action="models/deconnection.php" method="POST" style="display:inline;">
+            <button type="submit" style="padding:5px 10px; cursor:pointer;">Déconnexion</button>
+        </form>
+    <?php else: ?>
+        <p>Vous n'êtes pas connecté.</p>
+    <?php endif; ?>
+
     <h2>Clarté Ornée</h2>
         <p>Lumière & Élégance pour votre intérieur</p>
 

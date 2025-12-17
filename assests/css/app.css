@@ -901,18 +901,36 @@ h1 {
 
 .checkout-container {
     display: flex;
+    justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+.shipping-address, .payment-info {
+    flex: 1 1 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
-.shipping-address,
-.payment-info {
-    flex: 1 1 300px;
+.shipping-address h2, .payment-info h2 {
+    margin-bottom: 10px;
 }
 
+input[type="text"] {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid rgb(191, 188, 188);
+    border-radius: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
 
+input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
 .square button {
     display: block;
     margin: 0 auto 20px auto;

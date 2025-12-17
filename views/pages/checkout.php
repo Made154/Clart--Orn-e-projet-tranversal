@@ -29,8 +29,7 @@ var_dump($_POST['grand_total']);
 <body>
 
 <div class="square">
-
-    <h1 class="Nom_boutique">Checkout</h1>
+    <h1 class="info-services">Checkout</h1>
 
     <form action="models/process_checkout.php" method="POST">
 
@@ -66,19 +65,15 @@ var_dump($_POST['grand_total']);
 
                 <h1>Total: <?= number_format($grandTotal, 2) ?> €</h1>
                 <input type="hidden" name="grand_total" value="<?= $grandTotal ?>">
-                <button type="submit">Place Order</button>  
+                <button type="submit">Place Order</button>
             </div>
 
         </div>
 
-     
-
     </form>
-
-  
-
 </div>
 
 </body>
 </html>
+
 

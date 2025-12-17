@@ -32,7 +32,7 @@ Avant de lancer le projet, assurez-vous d’avoir installé :
 5. Voilà vous avez accès à notre site web
 
 ## base de données
-Résumé des tables :*
+Résumé des tables :
 
   -Role(id, name)
   
@@ -107,7 +107,7 @@ README.MD
 
 assets/ : contenue permettant l’esthétique du site web
 models/ : connexion et récupération des données de la database en local
-Création_de_notre_base_de_donnée/ : script de création de la ba de donnée
+Création_de_notre_base_de_donnée/ : script de création de la base de donnée
 views/ : affichage HTML
 
 

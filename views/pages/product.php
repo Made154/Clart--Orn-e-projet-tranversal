@@ -1,4 +1,5 @@
 <?php require('models/product.php'); ?>
+<?php $id_role = $_SESSION['id_role'] ?? 3; ?>
 
 <link rel="stylesheet" href="assests/css/app.css">
 
@@ -31,5 +32,8 @@
     </form>
 </section>
 
-<button><a href="index.php?page=update&id=<?php echo $article['id']; ?>" class="btn">Modifier</a></button>
+
+    <?php if ($id_role === 1) {
+            echo '<button><a href="index.php?page=update&id=' . $article['id'] . '" class="btn">Modifier</a></button>';
+}?>             
 

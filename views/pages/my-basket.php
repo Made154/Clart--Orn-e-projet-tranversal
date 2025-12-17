@@ -87,7 +87,7 @@ if (!isset($_SESSION['id_basket'])) {
 
         <input type="hidden" name="grand_total" value="<?= $grandTotal ?>">
 
-        <input type="hidden" name="is_logged_in" value="<?= isset($_SESSION['id_user']) ? 1 : 0 ?>">
+        <input type="hidden" name="is_logged_in" value="<?= isset($_SESSION['user_id']) ? 1 : 0 ?>">
 
         <button type="submit" class="Lien" style="color: white; margin-top:10px;">Passer à la caisse</button>
     </form>

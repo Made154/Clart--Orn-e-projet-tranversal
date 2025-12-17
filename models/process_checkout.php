@@ -1,10 +1,18 @@
 <?php 
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
+}
+
+$id_user = $_SESSION['user_id']; 
+
+if (!$id_user) {
+    echo "You must be logged in to complete the checkout.";
+    exit;
 }
 
 try {
@@ -19,17 +27,7 @@ $city = htmlspecialchars(trim($_POST['city'] ?? ''));
 $zip = htmlspecialchars(trim($_POST['zip'] ?? ''));
 $country = htmlspecialchars(trim($_POST['country'] ?? ''));
 
-$card = htmlspecialchars(trim($_POST['card'] ?? '')); // Card number - Not for real storage
-$expiry = htmlspecialchars(trim($_POST['expiry'] ?? ''));
-$cvv = htmlspecialchars(trim($_POST['cvv'] ?? ''));
-
-$grandTotal = $_POST['grand_total'] ?? 0;
-
-$id_user = $_SESSION['id_user'] ?? null;
-if (!$id_user) {
-    echo "You must be logged in to complete the checkout.";
-    exit;
-}
+$grandTotal = (float)$_POST['grand_total']; 
 
 if (!is_numeric($grandTotal) || $grandTotal <= 0) {
     echo "Invalid total amount.";
@@ -51,7 +49,12 @@ try {
     $orderId = $db->lastInsertId();
 
     $orderItemsValues = [];
-    $stmt = $db->prepare("SELECT id_article, quantity, price FROM basket_items WHERE id_basket = (SELECT id FROM basket WHERE id_user = ?)");
+    $stmt = $db->prepare("
+        SELECT bi.id_article, bi.quantity, a.price 
+        FROM basket_items bi
+        JOIN article a ON bi.id_article = a.id
+        WHERE bi.id_basket = (SELECT id FROM basket WHERE id_user = ?)
+    ");
     $stmt->execute([$id_user]);
     $basketItems = $stmt->fetchAll();
 
@@ -75,11 +78,12 @@ try {
 
     $stmt = $db->prepare("UPDATE payment SET status = 'Payé' WHERE id_user = ? AND amount = ?");
     $stmt->execute([$id_user, $grandTotal]);
+    header("Location: ../index.php?page=order_confirmation&orderId=$orderId&grandTotal=" . urlencode($grandTotal));
+exit;
 
-    echo "Your order has been successfully placed!";
 } catch (Exception $e) {
     $db->rollBack();
     echo "Error: " . $e->getMessage();
-}
+} 
 ?>
 

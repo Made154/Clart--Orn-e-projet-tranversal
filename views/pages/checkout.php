@@ -11,11 +11,12 @@ $grandTotal = $_POST['grand_total'] ?? 0;
 
 $grandTotal = is_numeric($grandTotal) ? (float)$grandTotal : 0;
 
-if (!isset($_SESSION['id_user'])) {
+if (!isset($_SESSION['user_id'])) {
     header("Location: index.php?page=inscription");
     exit;
 }
 
+var_dump($_POST['grand_total']);
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,6 @@ if (!isset($_SESSION['id_user'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achat</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -65,6 +65,7 @@ if (!isset($_SESSION['id_user'])) {
                 <input type="text" id="cvv" name="cvv" placeholder="123" required>
 
                 <h1>Total: <?= number_format($grandTotal, 2) ?> €</h1>
+                <input type="hidden" name="grand_total" value="<?= $grandTotal ?>">
                 <button type="submit">Place Order</button>  
             </div>
 

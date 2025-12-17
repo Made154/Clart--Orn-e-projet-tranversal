@@ -9,7 +9,7 @@ Il est développé en environnement local à l’aide de **Wamp64** pour le serv
 - **Wamp64** :
   - PHP
   - MySQL
-- **HTML / CSS
+- **HTML / CSS**
 - **PHP** (back-end)
 - **MySQL** (base de données)
 
@@ -20,7 +20,7 @@ Avant de lancer le projet, assurez-vous d’avoir installé :
 - Un navigateur web récent (Chrome, Firefox, Edge)
 
 ## Installation
-1. Cloner ou télécharger le projet
-2. Ensuite copier le MLD et le mettre dans un serveur sur wamp64 qui se nomme clarte_ornee en utf8mb4_general_ci
-3. Puis cliquer sur notre lien pour accéder au site
-4. Voilà vous avez accès à notre site web
+1. Cloner ou télécharger le projet : https://github.com/Made154/Clart--Orn-e-projet-tranversal.git
+3. Ensuite copier le MLD et le mettre dans un serveur sur wamp64 qui se nomme clarte_ornee en utf8mb4_general_ci
+4. Puis cliquer sur notre lien pour accéder au site
+5. Voilà vous avez accès à notre site web

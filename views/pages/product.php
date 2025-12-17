@@ -35,7 +35,7 @@ session_start();
 </section>
 
 
-    <?php if (($_SESSION['user_role']) === 1):
+    <?php if (($_SESSION['user_role'] ?? null) === 1):
         echo '<button><a href="index.php?page=update&id=' . $article['id'] . '" class="btn">Modifier</a></button>';
      endif; ?>           
 

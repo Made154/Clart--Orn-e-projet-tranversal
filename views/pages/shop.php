@@ -5,9 +5,9 @@ session_start();
 <?php include('views/partials/_search.php') ?>
 
 <div class="shop">
-    <?php if (($_SESSION['user_role']) === 1): ?>
+    <?php if (($_SESSION['user_role'] ?? null) === 1) { ?>
         <button><a href="index.php?page=add-product" class="btn">Ajouter</a></button>
-    <?php endif; ?>
+    <?php } ?>
     
     <?php 
     $categories = [

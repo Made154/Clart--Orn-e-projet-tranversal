@@ -494,7 +494,7 @@ h1 {
   }
 }
 
-/* Cadre général */
+
 .cadre-info-services {
     width: 85%;
     margin: 100px auto;
@@ -504,7 +504,7 @@ h1 {
     padding: 40px;
 }
 
-/* Flex map + formulaire */
+
 .bloc-info-services {
     display: flex;
     align-items: center;
@@ -512,7 +512,6 @@ h1 {
     justify-content: center;
 }
 
-/* Bloc map */
 .bloc-maps {
     width: 500px;
     height: 420px;
@@ -525,14 +524,14 @@ h1 {
     border-radius: 20px;
 }
 
-/* Bloc formulaire */
+
 .contact-container {
     flex: 1;
     color: white;
     max-width: 600px;
 }
 
-/* Titres */
+
 .contact-container h2 {
     font-size: 36px;
     font-weight: 500;
@@ -545,7 +544,7 @@ h1 {
     opacity: 0.9;
 }
 
-/* Formulaire */
+
 .contact-form {
     display: flex;
     flex-direction: column;

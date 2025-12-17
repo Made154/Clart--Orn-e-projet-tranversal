@@ -725,8 +725,10 @@ h1 {
 .inscri {
     display: flex;
     flex-direction: column;
-    color:#ffffff
+    color: #ffffff;
+    gap: 15px; /* espace entre les éléments */
 }
+
 
 .link-inscription {
     display: block;
@@ -746,4 +748,15 @@ h1 {
 
 .link-inscription:hover {
     transform: translateY(-10px);
+}
+
+.mention {
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    color: white;
+    max-width: 600px;
 }

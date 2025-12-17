@@ -32,15 +32,20 @@ Avant de lancer le projet, assurez-vous d’avoir installé :
 5. Voilà vous avez accès à notre site web
 
 ## base de données
-Résumé des tables :
+Résumé des tables :*
+
   -Role(id, name)
+  
   -User(id, id_role, name, surname, email, password, number, address, postal_code, date_inscription)
+  
   -Messages(id, email, message, created_at)
   
   -Category(id, name)
+  
   -Article(id, id_category, name, description, price, illustration, is_new, is_promo)
   
   -Basket(id, id_user)
+  
   -BasketItems(id, id_basket, id_article, quantity)
   
   -Orders(id, id_user, total_amount, shipping_address, shipping_postal_code, shipping_country, shipping_city, order_status, created_at)

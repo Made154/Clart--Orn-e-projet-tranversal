@@ -13,9 +13,8 @@ Il est développé en environnement local à l’aide de **Wamp64** pour le serv
 - **PHP** (back-end)
 - **MySQL** (base de données)
 
-##Architecture du projet
+## Architecture du projet
 
-```text
 assets/
 ├── css/
 │   └── app.css
@@ -60,7 +59,6 @@ views/
 
 index.php
 README.text
-...
 
 assets/ : contenue permettant l’esthétique du site web
 models/ : connexion et récupération des données de la database en local

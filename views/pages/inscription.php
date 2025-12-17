@@ -9,7 +9,6 @@ if (session_status() === PHP_SESSION_NONE) {
 </div>
 
 <?php
-// Affichage des messages d'erreur ou de succès
 if (isset($_SESSION['error'])) {
     echo '<p style="color:red;">'.$_SESSION['error'].'</p>';
     unset($_SESSION['error']);

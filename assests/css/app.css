@@ -7,6 +7,154 @@ body {
     margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+
+    body {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .square, .squareup, .info-services-square, .presentation {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .Nom_boutique, .info-services-Nom_boutique {
+        font-size: 28px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .Lien, .Liencon, .link-inscription a {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .shop {
+        margin-left: 0;
+        margin: 20px auto;
+    }
+
+    .name_category {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .article_item, .basket_item, .product_description {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .article_item img, .basket_item img, .product_description img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenu__geral, .cadre-info-services {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .bloc-info-services {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bloc-maps, .contact-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .carrossel {
+        gap: 20px;
+    }
+
+    .carrossel-item {
+        min-width: 80%;
+    }
+
+    .form_modif, .add-form, .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .presentation h2, .presentation p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .square, .squareup, .info-services-square, .presentation {
+        width: 70%;
+        margin: 50px auto;
+    }
+
+    .Nom_boutique, .info-services-Nom_boutique {
+        font-size: 40px;
+    }
+
+    .Lien, .Liencon, .link-inscription a {
+        font-size: 18px;
+    }
+
+    .article_item, .basket_item, .product_description {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .article_item img, .basket_item img, .product_description img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenu__geral, .cadre-info-services {
+        flex-direction: column;
+    }
+
+    .bloc-info-services {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bloc-maps, .contact-container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .square, .squareup, .info-services-square, .presentation {
+        width: 60%;
+    }
+
+    .Nom_boutique, .info-services-Nom_boutique {
+        font-size: 50px;
+    }
+
+    .Lien, .Liencon, .link-inscription a {
+        font-size: 18px;
+    }
+
+    .article_item, .basket_item, .product_description {
+        width: 70%;
+    }
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .square {
     margin-bottom: 50px;
     width: 40%;
@@ -726,8 +874,10 @@ h1 {
 .inscri {
     display: flex;
     flex-direction: column;
-    color:#ffffff
+    color: #ffffff;
+    gap: 15px; /* espace entre les éléments */
 }
+
 
 .link-inscription {
     display: block;
@@ -747,4 +897,15 @@ h1 {
 
 .link-inscription:hover {
     transform: translateY(-10px);
+}
+
+.mention {
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    color: white;
+    max-width: 600px;
 }

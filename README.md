@@ -19,7 +19,6 @@ Il est développé en environnement local à l’aide de **Wamp64** pour le serv
 
 ## Architecture du projet
 
-```text
 assets/
 ├── css/
 │   └── app.css
@@ -64,3 +63,23 @@ views/
 
 index.php
 README.md
+
+Role(id, name)
+User(id, id_role, name, surname, email, password, number, address, postal_code, date_inscription)
+Messages(id, email, message, created_at)
+
+Category(id, name)
+Article(id, id_category, name, description, price, illustration, is_new, is_promo)
+
+Basket(id, id_user)
+BasketItems(id, id_basket, id_article, quantity)
+
+Orders(id, id_user, total_amount, shipping_address, shipping_postal_code,
+       shipping_country, shipping_city, order_status, created_at)
+OrderItems(id, id_order, id_article, quantity, price)
+
+Payment(id, id_user, amount, date_paiement, mode, status)
+
+Notice(id, id_user, id_article, rating, comment, date_avis)
+
+SearchBar(id, desgc, descg)

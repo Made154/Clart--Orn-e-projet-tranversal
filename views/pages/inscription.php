@@ -7,24 +7,48 @@ if (session_status() === PHP_SESSION_NONE) {
 <div class="squareup">
     <h1>Créer un compte</h1>
 </div>
-    <form action="../../traitement/inscription_traitement.php" method="POST">
+
+<?php
+// Affichage des messages d'erreur ou de succès
+if (isset($_SESSION['error'])) {
+    echo '<p style="color:red;">'.$_SESSION['error'].'</p>';
+    unset($_SESSION['error']);
+}
+if (isset($_SESSION['success'])) {
+    echo '<p style="color:green;">'.$_SESSION['success'].'</p>';
+    unset($_SESSION['success']);
+}
+?>
+
+<form action="models/inscription_traitement.php" method="POST">
     <div class="inscri">
-        <label>Nom</label>
-        <input type="text" name="nom" required>
 
-        <label>Prénom</label>
-        <input type="text" name="prenom" required>
+        <label for="nom">Nom</label>
+        <input type="text" id="name" name="name" required>
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="surname" name="surname" required>
 
-        <label>Mot de passe</label>
-        <input type="password" name="password" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-        <label>Confirmer le mot de passe</label>
-        <input type="password" name="password_confirm" required>
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="password_confirm">Confirmer le mot de passe</label>
+        <input type="password" id="password_confirm" name="password_confirm" required>
+
+        <!-- Optionnel : numéro, adresse, code postal -->
+        <label for="number">Numéro de téléphone</label>
+        <input type="text" id="number" name="number">
+
+        <label for="address">Adresse</label>
+        <input type="text" id="address" name="address">
+
+        <label for="postal_code">Code postal</label>
+        <input type="text" id="postal_code" name="postal_code">
 
         <button type="submit">S'inscrire</button>
+
     </div>
-    </form>
-</div>
+</form>

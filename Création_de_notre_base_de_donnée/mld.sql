@@ -14,7 +14,7 @@ CREATE TABLE messages (
 );
 
 CREATE TABLE user (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     id_role INT NOT NULL,
     name VARCHAR(100),
     surname VARCHAR(100),

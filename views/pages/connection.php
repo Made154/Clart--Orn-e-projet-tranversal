@@ -23,8 +23,9 @@ if (session_status() === PHP_SESSION_NONE) {
             <button type="submit">Se connecter</button>
         </div>
     </form>
-            <p class="link-inscription">
+        <div class="link-inscription">
+            <p>
             Pas encore de compte ?
             <a href="index.php?page=inscription">Crée un compte</a>
             </p>
-
+        </div>

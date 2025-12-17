@@ -138,7 +138,7 @@ form input[type="submit"]:hover {
 }
 
 .bloc-image {
-    margin: 20px;
+    margin: 50px;
     width: 250px;
     height: 300px;
     flex-shrink: 0;
@@ -533,7 +533,7 @@ h1 {
 
 .contenu__geral {
   width: 80%;
-  margin: 200px 120px;
+  margin: 200px 170px;
   display: flex;
   justify-content: center;
   
@@ -541,8 +541,8 @@ h1 {
 
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: auto;
+  max-width: auto;
 }
 
 
@@ -556,12 +556,13 @@ h1 {
   display: flex;
   gap: 60px;
   animation: scroll 30s linear infinite;
+
 }
 
 
 .carrossel-item {
   min-width: auto;
-  height: auto;
+  height: 150px;
   border-radius: 25px;
 
   
@@ -575,8 +576,8 @@ h1 {
   0% {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%);
+  70% {
+    transform: translateX(-30%);
   }
 }
 

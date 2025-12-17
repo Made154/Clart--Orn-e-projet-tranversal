@@ -23,10 +23,10 @@ if (session_status() === PHP_SESSION_NONE) {
             <button type="submit">Se connecter</button>
         </div>
         <?php
-    // Affichage du message d'erreur s'il existe
+    
     if (isset($_SESSION['error'])) {
         echo '<p style="color:red;">' . $_SESSION['error'] . '</p>';
-        unset($_SESSION['error']); // on supprime le message après affichage
+        unset($_SESSION['error']);
     }
     ?>
     </form>

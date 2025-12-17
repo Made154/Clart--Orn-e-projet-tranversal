@@ -38,7 +38,7 @@ if (isset($_SESSION['success'])) {
         <label for="password_confirm">Confirmer le mot de passe</label>
         <input type="password" id="password_confirm" name="password_confirm" required>
 
-        <!-- Optionnel : numéro, adresse, code postal -->
+        
         <label for="number">Numéro de téléphone</label>
         <input type="text" id="number" name="number" required>
 

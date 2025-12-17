@@ -732,7 +732,7 @@ h1 {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     transition: 0.3s;
     margin-right: 10px;

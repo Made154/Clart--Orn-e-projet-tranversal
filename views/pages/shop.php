@@ -1,7 +1,10 @@
 <?php include('views/partials/_search.php') ?>
+<?php $id_role = $_SESSION['id_role'] ?? 3; ?>
 
     <div class="shop">
-        <button><a href="index.php?page=add-product" class="btn">Ajouter</a></button>
+       <?php if ($id_role === 1) {
+            echo '<button><a href="index.php?page=add-product" class="btn">Ajouter</a></button>';
+} ?>
         <h2 class=name_category>Bureau</h2>
             <div class=article>
                 <?php 

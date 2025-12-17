@@ -40,13 +40,13 @@ if (isset($_SESSION['success'])) {
 
         <!-- Optionnel : numéro, adresse, code postal -->
         <label for="number">Numéro de téléphone</label>
-        <input type="text" id="number" name="number">
+        <input type="text" id="number" name="number" required>
 
         <label for="address">Adresse</label>
-        <input type="text" id="address" name="address">
+        <input type="text" id="address" name="address" required>
 
         <label for="postal_code">Code postal</label>
-        <input type="text" id="postal_code" name="postal_code">
+        <input type="text" id="postal_code" name="postal_code" required>
 
         <button type="submit">S'inscrire</button>
 

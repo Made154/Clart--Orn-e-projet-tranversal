@@ -653,6 +653,12 @@ h1 {
     margin-right: 10px;
     font-size: 20px;
 }
+
+.link-inscription a {
+    color:blue;
+    text-decoration: none;
+}
+
 .link-inscription:hover {
     transform: translateY(-10px);
 }

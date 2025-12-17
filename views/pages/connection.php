@@ -12,7 +12,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <p class="error">Email ou mot de passe incorrect</p>
     <?php endif; ?>
 
-    <form action="../../traitement/connexion_traitement.php" method="POST" class="form">
+    <form action="models/connection_traitement.php" method="POST" class="form">
         <div class="inscri">
             <label>Email</label>
             <input type="email" name="email" required>
@@ -22,6 +22,13 @@ if (session_status() === PHP_SESSION_NONE) {
 
             <button type="submit">Se connecter</button>
         </div>
+        <?php
+    // Affichage du message d'erreur s'il existe
+    if (isset($_SESSION['error'])) {
+        echo '<p style="color:red;">' . $_SESSION['error'] . '</p>';
+        unset($_SESSION['error']); // on supprime le message après affichage
+    }
+    ?>
     </form>
         <div class="link-inscription">
             <p>

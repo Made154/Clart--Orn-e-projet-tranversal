@@ -1,3 +1,6 @@
+<?php
+session_start(); // toujours au tout début du fichier
+
 <footer>
     <h2>Clarté Ornée</h2>
         <p>Lumière & Élégance pour votre intérieur</p>

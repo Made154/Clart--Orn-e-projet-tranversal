@@ -28,12 +28,12 @@ CREATE TABLE user (
 );
 
 CREATE TABLE category (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE article (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     id_category INT NOT NULL,
     name VARCHAR(100),
     description TEXT,

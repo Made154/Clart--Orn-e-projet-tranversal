@@ -1,3 +1,15 @@
+<?php
+        $page = $_GET['page'] ?? 'home';
+        $file = "assests/css/$page.css";
+
+        if (file_exists($file)) {
+            include($file);
+        } else {
+            echo "<p>Page introuvable : <strong>$page</strong></p>";
+        }
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarté Ornée</title>
     <link rel="stylesheet" href="assests/css/app.css">
+    <link rel="stylesheet" href="<?=$file?>">
 
 </head>
 <body style="

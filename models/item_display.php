@@ -14,13 +14,24 @@ if (isset($id_category) && is_numeric($id_category)) {
     foreach ($articles_by_category as $article) {
 
 ?>
-    <div class="article_item">
-        <h3><?php echo htmlspecialchars($article['name']); ?></h3>
-        
-        <a href="index.php?page=product&id=<?php echo htmlspecialchars($article['id']); ?>">
-            <img src="<?php echo htmlspecialchars($article['illustration']); ?>" alt="">
+    <div class="product-card">
+
+        <img
+        src="<?php echo htmlspecialchars($article['illustration']); ?>"
+        alt="The Len Chair"
+        class="product-card__image"
+        />
+
+        <div class="product-card__details">
+        <h2 class="product-card__title"><?php echo htmlspecialchars($article['name']); ?></h2>
+        <span class="product-card__price"><?php echo htmlspecialchars($article['price']); ?>€</span>
+        </div>
+
+        <a href="index.php?page=product">
+            <button class="product-card__button" type="button">
+            Ajouter au panier • <img src="assests/img/icone-cadi.png">
+            </button>
         </a>
-        <p>Prix : <?php echo htmlspecialchars($article['price']); ?> €</p>
     </div>
 <?php 
     }

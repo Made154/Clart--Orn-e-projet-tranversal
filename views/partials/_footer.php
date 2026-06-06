@@ -2,8 +2,8 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
 ?>
+<link rel="stylesheet" href="assests/css/_footer.css">
 <footer>
 
     <?php if (isset($_SESSION['user_name']) && isset($_SESSION['user_surname'])): ?>

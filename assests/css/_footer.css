@@ -1,0 +1,129 @@
+footer {
+    background-color: #6B5444;
+    color: white;
+    padding: 40px 40px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- Session (connecté / non connecté) --- */
+footer > p {
+    text-align: right;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 6px;
+}
+
+footer > form {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+footer > form button {
+    background-color: #8B6F47;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+footer > form button:hover {
+    background-color: white;
+    color: #6B5444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* --- Nom & tagline --- */
+footer > h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+footer > h2 + p {
+    text-align: center;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* --- Contact --- */
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 25px;
+}
+
+.footer-contact p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+}
+
+/* --- Réseaux sociaux --- */
+.footer-socials {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+}
+
+.footer-socials a {
+    color: white;
+    text-decoration: none;
+    background-color: #8B6F47;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 8px 22px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.footer-socials a:hover {
+    background-color: white;
+    color: #8B6F47;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* --- Barre du bas --- */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer .Lien {
+    font-size: 13px;
+    padding: 5px 16px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .Lien:hover {
+    background-color: white;
+    color: #6B5444;
+    border-color: white;
+    transform: translateY(-2px);
+}

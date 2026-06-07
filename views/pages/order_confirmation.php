@@ -1,38 +1,35 @@
-<?php 
-
-$orderId = $_GET['orderId'] ?? null;
+<?php
+$orderId    = $_GET['orderId']    ?? null;
 $grandTotal = $_GET['grandTotal'] ?? null;
-
-if ($orderId && $grandTotal) {
-} else {
-    echo "Error: Missing order details.";
-}
-
 ?>
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Order Confirmation</title>
-    <link rel='stylesheet' href='/Clart--Orn-e-projet-tranversal/assets/css/app.css'>
-</head>
-<body>
 
-    <div class='square'>
-        <h1>Thank you for your order!</h1>
-        <h2 style="color: white;">Your order has been successfully placed.</h2>
+<div class="confirmation-page">
+    <?php if ($orderId && $grandTotal): ?>
+    <div class="confirmation-card">
+        <div class="confirmation-card__icon">✓</div>
+        <h1 class="confirmation-card__title">Merci pour votre commande !</h1>
+        <p class="confirmation-card__subtitle">Votre commande a été passée avec succès.</p>
 
-        <div class='order-details' style="color: white">
-            <h2>Order Details:</h2>
-            <p><strong>Order ID:</strong> <?= htmlspecialchars($orderId) ?> </p>
-            <p><strong>Total Amount:</strong> <?= number_format($grandTotal, 2) ?> €</p>
-            <p><strong>Status:</strong> Pending</p>
-            <p>We will send you an email with the tracking details once your order is processed.</p>
+        <div class="confirmation-card__details">
+            <div class="confirmation-card__row">
+                <span>Numéro de commande</span>
+                <strong>#<?= htmlspecialchars($orderId) ?></strong>
+            </div>
+            <div class="confirmation-card__row">
+                <span>Montant total</span>
+                <strong><?= number_format($grandTotal, 2) ?> €</strong>
+            </div>
+            <div class="confirmation-card__row">
+                <span>Statut</span>
+                <strong>En cours de traitement</strong>
+            </div>
         </div>
 
-        <a href='index.php?page=home' class='Lien'>Go to Home Page</a>
-    </div>
+        <p class="confirmation-card__note">Un email de confirmation avec les détails de suivi vous sera envoyé prochainement.</p>
 
-</body>
-</html>"
+        <a href="index.php?page=home" class="confirmation-card__btn">Retour à l'accueil</a>
+    </div>
+    <?php else: ?>
+    <p class="confirmation-error">Informations de commande manquantes.</p>
+    <?php endif; ?>
+</div>

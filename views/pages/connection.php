@@ -23,9 +23,10 @@
             <h1>Connexion</h1>
         </div>
 
-        <?php if (isset($_GET["erreur"])): ?>
-            <p class="error">Email ou mot de passe incorrect</p>
-            <?php endif; ?>
+        <?php if (isset($_SESSION['success'])): ?>
+            <p class="success-message"><?php echo htmlspecialchars($_SESSION['success']); ?></p>
+            <?php unset($_SESSION['success']); ?>
+        <?php endif; ?>
 
         <?php if (isset($_SESSION['error'])): ?>
             <p class="error"><?php echo htmlspecialchars($_SESSION['error']); ?></p>

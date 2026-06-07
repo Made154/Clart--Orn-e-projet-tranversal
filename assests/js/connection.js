@@ -6,8 +6,7 @@ const hint = document.getElementById('hint');
 
 let isOn = false;
 let isDragging = false;
-let startY= 0;
-let currentHeight = 60;
+let startY = 0;
 
 pullCord.addEventListener('mousedown', (e) => {
     isDragging = true;
@@ -17,7 +16,6 @@ pullCord.addEventListener('mousedown', (e) => {
 
 document.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
-
     const deltaY = e.clientY - startY;
     const newHeight = Math.max(60, Math.min(120, 60 + deltaY));
     pullCord.style.height = newHeight + 'px';
@@ -25,32 +23,32 @@ document.addEventListener('mousemove', (e) => {
 
 document.addEventListener('mouseup', (e) => {
     if (!isDragging) return;
-
     isDragging = false;
     const finalHeight = parseInt(pullCord.style.height);
-
     if (finalHeight > 90) {
         toggleLamp();
     }
-
     pullCord.style.transition = 'height 0.3s ease';
     pullCord.style.height = '60px';
 });
 
 function toggleLamp() {
     isOn = !isOn;
-
     if (isOn) {
         lampshade.classList.add('on');
         glow.classList.add('on');
         setTimeout(() => {
             loginForm.classList.add('show');
             hint.classList.add('hide');
-        }, 200);      
+        }, 200);
     } else {
         lampshade.classList.remove('on');
         glow.classList.remove('on');
         loginForm.classList.remove('show');
         hint.classList.remove('hide');
     }
+}
+
+if (document.querySelector('.error') || document.querySelector('.success-message')) {
+    toggleLamp();
 }

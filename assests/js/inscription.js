@@ -64,6 +64,10 @@ pullCord.addEventListener('click', (e) => {
     }
 });
 
+if (document.querySelector('.error') || document.querySelector('.success-message')) {
+    toggleLamp();
+}
+
 function toggleLamp() {
     isOn = !isOn;
 
@@ -110,12 +114,10 @@ inscriptionForm.addEventListener('submit', (e) => {
         glow.classList.remove('on');
         lampshade.classList.remove('on');
         lampshade.classList.add('sleeping');
-        // Réafficher les Z
         lampZs.forEach(z => z.classList.remove('hidden'));
     }, 3000);
 
     setTimeout(() => {
-        alert('Redirection vers la page de connexion...');
-        
-    }, 4000);
+        inscriptionForm.submit();
+    }, 3500);
 });

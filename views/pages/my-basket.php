@@ -1,7 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -10,7 +7,7 @@ if (!isset($_SESSION['id_basket'])) {
     $basketItems = [];
 } else {
     $stmt = $db->prepare("
-        SELECT 
+        SELECT
             bi.id AS basket_item_id,
             bi.quantity,
             a.id AS article_id,
@@ -26,80 +23,74 @@ if (!isset($_SESSION['id_basket'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-    <title>Mon panier</title>
-    <link rel="stylesheet" href="/Clart--Orn-e-projet-tranversal/assets/css/app.css">
-</head>
+<section class="basket-page">
+    <h1 class="basket-page__title">Mon panier</h1>
 
-<body>
+    <?php if (empty($basketItems)): ?>
 
+    <div class="basket-empty">
+        <p class="basket-empty__icon">🛒</p>
+        <p class="basket-empty__text">Votre panier est vide.</p>
+        <a href="index.php?page=shop" class="basket-empty__btn">Découvrir la boutique</a>
+    </div>
 
+    <?php else: ?>
 
-<?php if (empty($basketItems)): ?>
-    <h1 style="color:white; text-align:center;">Votre panier est vide.</h1>
-
-<?php else: ?>
-    <?php $grandTotal = 0; ?>
-
-    <?php foreach ($basketItems as $item): ?>
-        <?php
-            $total = $item['price'] * $item['quantity'];
-            $grandTotal += $total;
-        ?>
-
-        <div class="basket_item">
-                <div class="bloc-image-panier">
-                    <img 
-                        src="<?= htmlspecialchars($item['illustration']) ?>" 
-                        alt="<?= htmlspecialchars($item['name']) ?>">
+    <div class="basket-layout">
+        <ul class="basket-list">
+            <?php $grandTotal = 0; ?>
+            <?php foreach ($basketItems as $item): ?>
+            <?php
+                $total = $item['price'] * $item['quantity'];
+                $grandTotal += $total;
+            ?>
+            <li class="basket-item">
+                <img
+                    class="basket-item__img"
+                    src="<?= htmlspecialchars($item['illustration']) ?>"
+                    alt="<?= htmlspecialchars($item['name']) ?>"
+                >
+                <div class="basket-item__body">
+                    <h2 class="basket-item__name"><?= htmlspecialchars($item['name']) ?></h2>
+                    <p class="basket-item__price"><?= number_format($item['price'], 2) ?> € / unité</p>
+                    <p class="basket-item__qty">Quantité : <strong><?= (int)$item['quantity'] ?></strong></p>
+                    <p class="basket-item__total">Sous-total : <strong><?= number_format($total, 2) ?> €</strong></p>
                 </div>
-
-                <div class="bloc-texte">
-                    <h2><?= htmlspecialchars($item['name']) ?></h2>
-
-                    <p><strong>Prix unitaire :</strong> <?= number_format($item['price'], 2) ?> €</p>
-                    <p><strong>Quantité :</strong> <?= (int)$item['quantity'] ?></p>
-                    <p><strong>Total :</strong> <?= number_format($total, 2) ?> €</p>
-                    
-                    <form action="models/remove_from_basket.php" method="POST" class="remove-from-basket">
+                <div class="basket-item__actions">
+                    <a class="basket-item__view" href="index.php?page=product&id=<?= (int)$item['article_id'] ?>">Voir le produit</a>
+                    <form action="models/remove_from_basket.php" method="POST">
                         <input type="hidden" name="basket_item_id" value="<?= (int)$item['basket_item_id'] ?>">
-
                         <input type="hidden" name="article_id" value="<?= (int)$item['article_id'] ?>">
-
-                        <input type="number" name="quantity" value="1" min="1" max="<?= $item['quantity'] ?>">
-
-                        <button type="submit" class="Lien">Supprimer</button>
+                        <div class="basket-item__remove-row">
+                            <input type="number" name="quantity" value="1" min="1" max="<?= (int)$item['quantity'] ?>">
+                            <button type="submit" class="basket-item__remove-btn">Supprimer</button>
+                        </div>
                     </form>
-
-
-                        <a class="Lien" href="index.php?page=product&id=<?= (int)$item['article_id'] ?>">
-                            Voir l’article
-                        </a>
                 </div>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+
+        <div class="basket-summary">
+            <h2 class="basket-summary__title">Récapitulatif</h2>
+            <div class="basket-summary__row">
+                <span>Articles</span>
+                <span><?= count($basketItems) ?> produit<?= count($basketItems) > 1 ? 's' : '' ?></span>
+            </div>
+            <div class="basket-summary__row basket-summary__row--total">
+                <span>Total</span>
+                <span><?= number_format($grandTotal, 2) ?> €</span>
+            </div>
+            <form action="index.php?page=checkout" method="POST">
+                <input type="hidden" name="grand_total" value="<?= $grandTotal ?>">
+                <input type="hidden" name="is_logged_in" value="<?= isset($_SESSION['user_id']) ? 1 : 0 ?>">
+                <button type="submit" class="basket-summary__checkout-btn">
+                    Passer à la caisse
+                </button>
+            </form>
+            <a href="index.php?page=shop" class="basket-summary__continue">Continuer mes achats</a>
         </div>
+    </div>
 
-    <?php endforeach; ?>
-<div class="square"> 
-    <form action="index.php?page=checkout" method="POST" style="text-align:center; margin-top:10px;">
-
-        <input type="hidden" name="grand_total" value="<?= $grandTotal ?>">
-
-        <input type="hidden" name="is_logged_in" value="<?= isset($_SESSION['user_id']) ? 1 : 0 ?>">
-
-        <button type="submit" class="Lien" style="color: white; margin-top:10px;">Passer à la caisse</button>
-    </form>
-
-    <h2 style="color:white; text-align:center; margin-top:10px;">
-        Total du panier : <?= number_format($grandTotal, 2) ?> €
-    </h2>
-</div>
-
-
-<?php endif; ?>
-
-</body>
-</html>
-
+    <?php endif; ?>
+</section>

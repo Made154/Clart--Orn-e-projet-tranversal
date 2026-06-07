@@ -24,12 +24,12 @@ if (isset($id_category) && is_numeric($id_category)) {
 
         <div class="product-card__details">
         <h2 class="product-card__title"><?php echo htmlspecialchars($article['name']); ?></h2>
-        <span class="product-card__price"><?php echo htmlspecialchars($article['price']); ?>€</span>
+        <span class="product-card__price"><?php echo htmlspecialchars($article['price']); ?> €</span>
         </div>
 
-        <a href="index.php?page=product">
+        <a href="index.php?page=product&id=<?php echo (int)$article['id']; ?>">
             <button class="product-card__button" type="button">
-            Ajouter au panier • <img src="assests/img/icone-cadi.png">
+            Ajouter au panier <img src="assests/img/icone-cadi.png">
             </button>
         </a>
     </div>

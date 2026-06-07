@@ -24,8 +24,8 @@
     background-attachment: fixed;
 ">
 
+    <?php include("models/bdd.php"); ?>
     <?php include('views/partials/_navbar.php') ?>
-    <?php include ("models/bdd.php"); ?>
     
     <main class="container">
     <?php

@@ -1,10 +1,6 @@
-<?php include('views/partials/_section.php') ?>
 <section class="presentation">
 
     <div class="bloc ligne">
-        <div class="bloc-image">
-            <img src="assests/img/image1.png" alt="Image présentation" width="170px">
-        </div>
         <div class="bloc-texte">
             <h2>Un savoir-faire unique</h2>
             <p>
@@ -19,16 +15,30 @@
 </section>
 
 <div class="contenu__geral">
-    <div class="container">
-        <div class="container-carrossel">
-            <div class="carrossel">
-                    <div class="carrossel-item"><image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpBUHjm-0RwyLRVZztlFOgtpdheJBRHs7mA&s" width ="150px"></div>
-                    <div class="carrossel-item"><image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR943c55rGbhFX903Yt2WqAqF3zt69on-CJOQ&s" width ="150px"></div>
-                    <div class="carrossel-item"><image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVaow9YeJmE7uIPjXkYwN7AbhySec1Y82uHw&s" width ="150px"></div>
-                    <div class="carrossel-item"><image src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSnwg34TKD51VJQTpSQ1szxxkWxQtHSsBAZfVg8Xr65IBU8FD6IIDVq6nnT1XxPWOuWVAycxZuEbAWzoyCdOtnTzMgtBWQa4YcQ41EooU7IVd-Ku2mREm9C&usqp=CAc" width ="150px"></div>
-                    <div class="carrossel-item"><image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjSNTwEn59lMbR5XTMHttdCXjsjC6XVo1Eg&s" width ="150px"></div>
+    <h2>Nos lampes tendance</h2>
 
-            </div>
+    <div class="grille-lampes">
+
+        <div class="carte-lampe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpBUHjm-0RwyLRVZztlFOgtpdheJBRHs7mA&s" alt="Lampe 1">
+            <h3>Lampe bureau </h3>
         </div>
+
+        <div class="carte-lampe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR943c55rGbhFX903Yt2WqAqF3zt69on-CJOQ&s" alt="Lampe 2">
+            <h3>Lampadaire Moderne</h3>
+        </div>
+
+        <div class="carte-lampe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVaow9YeJmE7uIPjXkYwN7AbhySec1Y82uHw&s" alt="Lampe 3">
+            <h3>Lampe suspension</h3>
+        </div>
+
+        <div class="carte-lampe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjSNTwEn59lMbR5XTMHttdCXjsjC6XVo1Eg&s" alt="Lampe 4">
+            <h3>Lampe table</h3>
+        </div>
+
     </div>
 </div>
+

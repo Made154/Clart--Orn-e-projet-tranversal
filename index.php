@@ -15,14 +15,7 @@
     ?>
 
 </head>
-<body style="
-    background-image: url(https://ecoquartiervauban.fr/wp-content/uploads/2024/12/temp-imagejpg-4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;
-">
+<body>
 
     <?php include("models/bdd.php"); ?>
     <?php include('views/partials/_navbar.php') ?>

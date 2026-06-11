@@ -19,26 +19,26 @@
 
     <div class="grille-lampes">
 
-        <div class="carte-lampe">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpBUHjm-0RwyLRVZztlFOgtpdheJBRHs7mA&s" alt="Lampe 1">
-            <h3>Lampe bureau </h3>
-        </div>
+    <a href="index.php?page=shop&category=1" class="carte-lampe">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpBUHjm-0RwyLRVZztlFOgtpdheJBRHs7mA&s" alt="Lampe Bureau">
+        <h3>Lampes de bureau</h3>
+    </a>
 
-        <div class="carte-lampe">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR943c55rGbhFX903Yt2WqAqF3zt69on-CJOQ&s" alt="Lampe 2">
-            <h3>Lampadaire Moderne</h3>
-        </div>
+    <a href="index.php?page=shop&category=2" class="carte-lampe">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR943c55rGbhFX903Yt2WqAqF3zt69on-CJOQ&s" alt="Lampadaire">
+        <h3>Lampadaires</h3>
+    </a>
 
-        <div class="carte-lampe">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVaow9YeJmE7uIPjXkYwN7AbhySec1Y82uHw&s" alt="Lampe 3">
-            <h3>Lampe suspension</h3>
-        </div>
+    <a href="index.php?page=shop&category=3" class="carte-lampe">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVaow9YeJmE7uIPjXkYwN7AbhySec1Y82uHw&s" alt="Suspension">
+        <h3>Suspensions</h3>
+    </a>
 
-        <div class="carte-lampe">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjSNTwEn59lMbR5XTMHttdCXjsjC6XVo1Eg&s" alt="Lampe 4">
-            <h3>Lampe table</h3>
-        </div>
+    <a href="index.php?page=shop&category=4" class="carte-lampe">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjSNTwEn59lMbR5XTMHttdCXjsjC6XVo1Eg&s" alt="Murale">
+        <h3>Appliques murales</h3>
+    </a>
 
-    </div>
+</div>
 </div>
 

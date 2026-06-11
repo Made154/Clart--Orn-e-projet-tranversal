@@ -20,7 +20,14 @@ if (session_status() === PHP_SESSION_NONE) {
         7 => 'Enfants'
     ];
 
-    foreach ($categories as $id_category => $name_category): ?>
+    $selected_category = $_GET['category'] ?? null;
+
+    foreach ($categories as $id_category => $name_category):
+
+        if ($selected_category && $selected_category != $id_category) {
+            continue;
+        }
+?>
         <h2 class="name_category"><?= htmlspecialchars($name_category) ?></h2>
         <div class="article">
             <?php include('models/item_display.php'); ?>
